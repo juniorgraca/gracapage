@@ -1,0 +1,13 @@
+@font-face {
+  font-family: "MonaSans";
+  src: local("MonaSans"), url(./fonts/MonaSans-Regular.ttf) format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #252738;
+}
