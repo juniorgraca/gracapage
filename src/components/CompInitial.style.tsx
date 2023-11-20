@@ -3,10 +3,13 @@ export const StyledContainerInit = styled.section`
   display: flex;
   width: 1140px;
   margin: 0 auto;
+  background-color:black;
+  margin-top:-20px
 `;
 export const StyledLogoAvatar = styled.img`
   z-index: 4;
-  padding-top: 30px;
+ margin-top: 0px;
+  background-color:rebeccapurple
 `;
 export const StyledText = styled.h3`
   color: #fff;
@@ -15,12 +18,12 @@ export const StyledText = styled.h3`
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  margin-top: 130px;
+  margin-top: 40px;
   z-index: 5;
   margin-left: 30px;
 `;
 export const StyledImgDivBtm = styled.div`
-  margin-top: 100px;
+  margin-top: 300px;
   width: 100%;
   height: 200px;
   background: #655638;
@@ -33,7 +36,7 @@ export const StyledImgDivBtm = styled.div`
     width: 100%;
     height: 100px;
     position: absolute;
-    top: 0px;
+    top: -100px;
     z-index: 2;
   }
   &::after {
@@ -42,7 +45,7 @@ export const StyledImgDivBtm = styled.div`
     width: 100%;
     height: 145px;
     position: absolute;
-    top: 200px;
+    top: 100px;
     z-index: 3;
   }
 `;

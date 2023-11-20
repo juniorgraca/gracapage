@@ -1,8 +1,10 @@
-interface StyledCarouselProps {
-  imageUrl: string;
-  width: string;
-}
+
 import styled from "styled-components";
+
+interface props {
+  imageUrl:string;
+
+ }
 
 export const StyledNavBanner = styled.nav`
   width: 1140px;
@@ -30,13 +32,13 @@ export const StyledBtnP = styled.p`
   line-height: normal;
 `;
 
-export const StyledCarrosel: React.FC<StyledCarouselProps> = styled.div`
+export const StyledCarrosel = styled.div <props>`
   height: 545px;
   background-image: url("${(props) => props.imageUrl}");
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 50px;
   margin: 0 0 0 14px;
-
-  width: ${(props) => props.width};
+  transition: 0.4s cubic-bezier(0.455,0.03,0.515,0.955);
+  cursor:pointer;
 `;
