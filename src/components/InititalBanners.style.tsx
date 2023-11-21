@@ -1,13 +1,11 @@
-
 import styled from "styled-components";
 
 interface props {
-  imageUrl:string;
-
- }
+  imageUrl: string;
+}
 
 export const StyledNavBanner = styled.nav`
-  width: 1140px;
+  width: 1440px;
   margin: 0 auto;
   display: flex;
   align-content: center;
@@ -32,13 +30,22 @@ export const StyledBtnP = styled.p`
   line-height: normal;
 `;
 
-export const StyledCarrosel = styled.div <props>`
+export const StyledCarrosel = styled.div<props>`
   height: 545px;
   background-image: url("${(props) => props.imageUrl}");
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 50px;
-  margin: 0 0 0 14px;
-  transition: 0.4s cubic-bezier(0.455,0.03,0.515,0.955);
-  cursor:pointer;
+  margin: 0 0 0 3px;
+  transition: 1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  cursor: pointer;
+  align-items: start;
+  display: flex;
+  padding-top: 15px;
+`;
+
+export const StyledIcon = styled.img`
+  transition: 3ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  padding-left: "20px";
+  display: flex;
 `;

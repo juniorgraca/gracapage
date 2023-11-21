@@ -1,43 +1,42 @@
 import styled from "styled-components";
 export const StyledContainerInit = styled.section`
+  margin-top: 190px;
+`;
+export const StyledContent = styled.div`
   display: flex;
-  width: 1140px;
+  width: 1440px;
+  z-index: 1;
   margin: 0 auto;
-  background-color:black;
-  margin-top:-20px
+  justify-content: space-around;
+  align-items: start;
 `;
-export const StyledLogoAvatar = styled.img`
-  z-index: 4;
- margin-top: 0px;
-  background-color:rebeccapurple
-`;
+
+export const StyledLogoAvatar = styled.img``;
+
 export const StyledText = styled.h3`
+  padding-top: 50px;
   color: #fff;
-  font-family: MonaSans, Helvetica;
-  font-size: 20px;
+  font-family: MonaSans;
+  font-size: 1.3rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  margin-top: 40px;
-  z-index: 5;
-  margin-left: 30px;
+  width: 750px;
 `;
 export const StyledImgDivBtm = styled.div`
-  margin-top: 300px;
   width: 100%;
-  height: 200px;
+  height: 180px;
   background: #655638;
   position: absolute;
-
-  z-index: 10;
+  z-index: -1;
   &::before {
     content: "";
     background-image: url("/img-section-top.png");
     width: 100%;
-    height: 100px;
+    height: 255px;
     position: absolute;
     top: -100px;
-    z-index: 2;
+    z-index: -1;
   }
   &::after {
     content: "";
@@ -45,7 +44,7 @@ export const StyledImgDivBtm = styled.div`
     width: 100%;
     height: 145px;
     position: absolute;
-    top: 100px;
-    z-index: 3;
+    top: 180px;
+    z-index: -1;
   }
 `;
