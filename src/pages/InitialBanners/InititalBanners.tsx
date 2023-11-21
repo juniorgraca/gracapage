@@ -40,51 +40,52 @@ function InititalBanners() {
     }
   };
 
-  const pxFull = 100;
-  const pxMiddle = 79;
+  const pxFull =85 ;
+  const pxMiddle = 5;
 
   const stylesArray = [
     witdh1
       ? {
           width: `${pxFull}%`,
           justifyContent: "space-evenly",
-          paddingLeft: "15px",
+
           cursor:"default",
         }
       : {
-          width: `${pxMiddle}px`,
+          width: `${pxMiddle}%`,
           justifyContent: "space-evenly",
         },
     witdh2
       ? {
           width: `${pxFull}%`,
           justifyContent: "space-evenly",
-          paddingLeft: "15px",
+          
           cursor:"default",
         }
       : {
-          width: `${pxMiddle}px`,
+          width: `${pxMiddle}%`,
           justifyContent: "space-evenly",
         },
     witdh3
       ? {
           width: `${pxFull}%`,
           justifyContent: "space-evenly",
-          paddingLeft: "15px",
+     
           cursor:"default",
         }
       : {
-          width: `${pxMiddle}px`,
+          width: `${pxMiddle}%`,
           justifyContent: "space-evenly",
         },
     witdh4
       ? {
           width: `${pxFull}%`,
           justifyContent: "space-evenly",
-          paddingLeft: "15px",
+  
+          cursor:"default"
         }
       : {
-          width: `${pxMiddle}px`,
+          width: `${pxMiddle}%`,
           justifyContent: "space-evenly",
         },
   ];
