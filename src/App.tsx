@@ -14,6 +14,7 @@ function App() {
             <NavBar></NavBar>
             <InititalBanners></InititalBanners>
             <InitialNav></InitialNav>
+            <InititalBanners></InititalBanners>
           </>
     
       </div>

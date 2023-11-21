@@ -40,15 +40,16 @@ function InititalBanners() {
     }
   };
 
-  const pxFull = 1155;
+  const pxFull = 100;
   const pxMiddle = 79;
 
   const stylesArray = [
     witdh1
       ? {
-          width: `${pxFull}px`,
+          width: `${pxFull}%`,
           justifyContent: "space-evenly",
           paddingLeft: "15px",
+          cursor:"default",
         }
       : {
           width: `${pxMiddle}px`,
@@ -56,9 +57,10 @@ function InititalBanners() {
         },
     witdh2
       ? {
-          width: `${pxFull}px`,
+          width: `${pxFull}%`,
           justifyContent: "space-evenly",
           paddingLeft: "15px",
+          cursor:"default",
         }
       : {
           width: `${pxMiddle}px`,
@@ -66,9 +68,10 @@ function InititalBanners() {
         },
     witdh3
       ? {
-          width: `${pxFull}px`,
+          width: `${pxFull}%`,
           justifyContent: "space-evenly",
           paddingLeft: "15px",
+          cursor:"default",
         }
       : {
           width: `${pxMiddle}px`,
@@ -76,7 +79,7 @@ function InititalBanners() {
         },
     witdh4
       ? {
-          width: `${pxFull}px`,
+          width: `${pxFull}%`,
           justifyContent: "space-evenly",
           paddingLeft: "15px",
         }

@@ -1,29 +1,22 @@
 import {
-  StyledContainerInit,
-  StyledImgDivBtm,
-  StyledLogoAvatar,
-  StyledText,
-  StyledContent,
+  StyledContainerInit,StyledSection,StyledPicture,StyledTextArea,StyledTextTitle,StyledTextDesc,StyledPictureContain
+ 
 } from "../../components/CompInitial.style";
 
 function InitialNav() {
   return (
     <>
       <StyledContainerInit>
-        <StyledImgDivBtm>
-          <StyledContent>
-            <StyledLogoAvatar
-              width="289"
-              height="385"
-              src="/logo--picture.png"
-            />
-            <StyledText>
-              My name is José Carlos da Graça Júnior, or better known as Junior
-              Graça. I am married, a father of a young boy, and I am 27 years
-              old. I live in Três Lagoas - MS.
-            </StyledText>
-          </StyledContent>
-        </StyledImgDivBtm>
+       <StyledSection>
+        <StyledPictureContain>
+        <StyledPicture src="logo--picture.png"/>
+        </StyledPictureContain>
+        <StyledTextArea>
+          <StyledTextTitle>Quem sou</StyledTextTitle>
+          <StyledTextDesc> Me chamo Junior Graça, tenho 27 anos e sou apaixonado por criar experiências digitais incríveis.
+Como Frontend Developer e UI Designer, minha jornada profissional é pautada na busca incessante pela excelência. Atualmente, estou mergulhado no universo do desenvolvimento e design, atuando como freelancer. Minha expertise concentra-se em produzir interfaces modernas, otimizadas em performance, repletas de animações cativantes e totalmente responsivas.</StyledTextDesc>
+        </StyledTextArea>
+       </StyledSection>
       </StyledContainerInit>
     </>
   );

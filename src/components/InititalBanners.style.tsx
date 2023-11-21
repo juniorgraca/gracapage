@@ -5,7 +5,6 @@ interface props {
 }
 
 export const StyledNavContent = styled.nav`
-
   margin-top: 40px;
 `
 export const StyledNavBanner = styled.div`
@@ -19,7 +18,7 @@ export const StyledBtn = styled.button`
   margin:0 auto;
   margin-bottom:30px;
   border-radius: 20px;
-  background: #655638;
+  background: #F9C202;
   border: none;
   width: 162px;
   height: 36px;
@@ -29,14 +28,14 @@ export const StyledBtn = styled.button`
 `;
 
 export const StyledBtnP = styled.p`
-  color: #e8e8e8;
+  color: #232534;
   font-family: MonaSans;
   font-size: 17px;
   font-style: normal;
   font-weight: 400;
   cursor: pointer;
   line-height: normal;&:hover{
-    color: #a7a7a7;
+    color: #424242;
   
   }
 `;
