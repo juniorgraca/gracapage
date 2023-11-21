@@ -8,6 +8,7 @@ import {
   StyledNavBanner,
   StyledCarrosel,
   StyledIcon,
+  StyledNavContent
 } from "../../components/InititalBanners.style";
 
 function InititalBanners() {
@@ -39,8 +40,8 @@ function InititalBanners() {
     }
   };
 
-  const pxFull = 1125;
-  const pxMiddle = 105;
+  const pxFull = 1155;
+  const pxMiddle = 79;
 
   const stylesArray = [
     witdh1
@@ -87,10 +88,12 @@ function InititalBanners() {
 
   return (
     <>
-      <StyledBtn>
+    <StyledNavContent>
+    <StyledBtn>
         <StyledBtnP>Open to Work !</StyledBtnP>
       </StyledBtn>
       <StyledNavBanner>
+     
         {banners.map((item, index) => (
           <StyledCarrosel
             key={item.id}
@@ -98,10 +101,11 @@ function InititalBanners() {
             style={stylesArray[index]}
             onClick={() => handleClick(item.id)}
           >
-            <StyledIcon src={item.icon} width="50px" />
+            <StyledIcon src={item.icon} width="56px" height="56px" />
           </StyledCarrosel>
         ))}
       </StyledNavBanner>
+      </StyledNavContent>
     </>
   );
 }

@@ -13,7 +13,8 @@ export const LogoImg = styled.img``;
 
 export const MenuText = styled.ul`
   list-style: none;
-  background-color: #d3d3d3;
+ 
+
 `;
 export const MenuLi = styled.li`
   color: #fff;
@@ -23,5 +24,8 @@ export const MenuLi = styled.li`
   font-style: normal;
   font-weight: 400;
   padding-right: 15px;
-  line-height: normal;
+  cursor:pointer;
+  line-height: normal;&:hover{
+    color: #a7a7a7;
+}
 `;

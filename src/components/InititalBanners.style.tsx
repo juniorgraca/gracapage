@@ -4,7 +4,11 @@ interface props {
   imageUrl: string;
 }
 
-export const StyledNavBanner = styled.nav`
+export const StyledNavContent = styled.nav`
+
+  margin-top: 40px;
+`
+export const StyledNavBanner = styled.div`
   width: 1440px;
   margin: 0 auto;
   display: flex;
@@ -12,13 +16,16 @@ export const StyledNavBanner = styled.nav`
   justify-content: center;
 `;
 export const StyledBtn = styled.button`
-  margin-top: 100px;
+  margin:0 auto;
+  margin-bottom:30px;
   border-radius: 20px;
   background: #655638;
   border: none;
   width: 162px;
   height: 36px;
   flex-shrink: 0;
+  display:block;
+
 `;
 
 export const StyledBtnP = styled.p`
@@ -27,7 +34,11 @@ export const StyledBtnP = styled.p`
   font-size: 17px;
   font-style: normal;
   font-weight: 400;
-  line-height: normal;
+  cursor: pointer;
+  line-height: normal;&:hover{
+    color: #a7a7a7;
+  
+  }
 `;
 
 export const StyledCarrosel = styled.div<props>`
@@ -45,7 +56,7 @@ export const StyledCarrosel = styled.div<props>`
 `;
 
 export const StyledIcon = styled.img`
-  transition: 3ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  
   padding-left: "20px";
   display: flex;
 `;
