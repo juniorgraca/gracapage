@@ -6,7 +6,7 @@ interface props {
 
 export const StyledNavContent = styled.nav`
   margin-top: 40px;
-`
+`;
 export const StyledNavBanner = styled.div`
   width: 1440px;
   margin: 0 auto;
@@ -15,16 +15,19 @@ export const StyledNavBanner = styled.div`
   justify-content: center;
 `;
 export const StyledBtn = styled.button`
-  margin:0 auto;
-  margin-bottom:30px;
+  margin: 0 auto;
+  margin-bottom: 30px;
   border-radius: 20px;
-  background: #F9C202;
+  background: #f9c202;
   border: none;
   width: 162px;
   height: 36px;
   flex-shrink: 0;
-  display:block;
-
+  display: block;
+  &:hover {
+    background: #eece5b;
+    color: #fff;
+  }
 `;
 
 export const StyledBtnP = styled.p`
@@ -34,9 +37,9 @@ export const StyledBtnP = styled.p`
   font-style: normal;
   font-weight: 400;
   cursor: pointer;
-  line-height: normal;&:hover{
+  line-height: normal;
+  &:hover {
     color: #424242;
-  
   }
 `;
 
@@ -55,7 +58,6 @@ export const StyledCarrosel = styled.div<props>`
 `;
 
 export const StyledIcon = styled.img`
-  
   padding-left: "20px";
   display: flex;
 `;
