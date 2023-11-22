@@ -3,7 +3,13 @@ import {
   StyledSkillDot,
   StyledSkillNav,
   StyledSkillTitle,
+  StyledIconsSkill,
+  StyledIconsSkillContain,
+StyledNavIcons
+
 } from "../../components/Skills.style";
+import { skills } from "../../types/skills";
+
 function InitialSkills() {
   return (
     <>
@@ -11,7 +17,14 @@ function InitialSkills() {
         <StyledSkillContent>
           <StyledSkillTitle>Habilidades</StyledSkillTitle>
           <StyledSkillDot>.</StyledSkillDot>
-        </StyledSkillContent>
+          </StyledSkillContent>
+          <StyledNavIcons>
+          {skills.map((item) => (
+            <StyledIconsSkillContain>
+        <StyledIconsSkill key={item.id}  src={item.icon} width={item.width} height={item.height}/> 
+        </StyledIconsSkillContain>
+        ))}
+</StyledNavIcons>
       </StyledSkillNav>
     </>
   );
