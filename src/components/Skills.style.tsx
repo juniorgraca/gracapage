@@ -32,6 +32,7 @@ export const StyledSkillDot = styled.p`
   font-weight: 400;
   line-height: normal;
 `;
+<<<<<<< HEAD
 
 export const StyledContainSec= styled.section`
  display: grid;
@@ -61,8 +62,30 @@ border: 1px solid #f9c202;
 }
 `
 export const StyledIconsSkill = styled.img`
+=======
+export const StyledIconsSkillContain = styled.div`
+  width: 272px;
+  height: 205px;
+  border-radius: 0.3125rem;
+  border: 1px solid rgba(249, 194, 2, 0.3);
+  background: #232534;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  justify-content: center;
+  &:hover {
+    border: 1px solid #f9c202;
+  }
+`;
+export const StyledIconsSkill = styled.img``;
+>>>>>>> 43ae533f3be35cc884f6be4f4a8f3cac0c6c1262
 
+export const StyledNavIcons = styled.div`
+  display: grid;
+  width: 1440px;
+  margin: 0 auto;
 
+<<<<<<< HEAD
 `
 
 export const StyledNavIcons= styled.div`
@@ -86,3 +109,12 @@ export const StyledNavText = styled.div`
  height:400px
 
 `
+=======
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 18px 18px;
+  grid-template-areas:
+    ". . . . ."
+    ". . . . .";
+`;
+>>>>>>> 43ae533f3be35cc884f6be4f4a8f3cac0c6c1262

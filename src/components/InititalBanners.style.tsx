@@ -48,17 +48,37 @@ export const StyledCarrosel = styled.div<props>`
   height: 545px;
   background-image: url("${(props) => props.imageUrl}");
   background-repeat: no-repeat;
-  background-size: cover;
+
   border-radius: 50px;
+<<<<<<< HEAD
   
+=======
+
+  background-position: center;
+
+  background-size: cover;
+
+>>>>>>> 43ae533f3be35cc884f6be4f4a8f3cac0c6c1262
   transition: 0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955);
   cursor: pointer;
   align-items: start;
   display: flex;
-  padding-top: 15px;
 `;
 
-export const StyledIcon = styled.img`
-  padding-left: "20px";
+export const StyledIconNav = styled.div`
   display: flex;
+  border-radius: 50px;
+  margin-top: -0.6px;
+  background: linear-gradient(
+    180deg,
+    #000 -32.66%,
+    rgba(142, 111, 0, 0) 92.96%
+  );
+  width: 100%;
+  justify-content: center;
+  height: 190px;
+`;
+export const StyledIcon = styled.img`
+  display: flex;
+  margin-top: 10px;
 `;
