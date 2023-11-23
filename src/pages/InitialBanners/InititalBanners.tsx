@@ -8,7 +8,8 @@ import {
   StyledNavBanner,
   StyledCarrosel,
   StyledIcon,
-  StyledNavContent
+  StyledNavContent,
+  StyledIconNav,
 } from "../../components/InititalBanners.style";
 
 function InititalBanners() {
@@ -40,7 +41,7 @@ function InititalBanners() {
     }
   };
 
-  const pxFull =85 ;
+  const pxFull = 85;
   const pxMiddle = 5;
 
   const stylesArray = [
@@ -49,7 +50,7 @@ function InititalBanners() {
           width: `${pxFull}%`,
           justifyContent: "space-evenly",
 
-          cursor:"default",
+          cursor: "default",
         }
       : {
           width: `${pxMiddle}%`,
@@ -59,8 +60,8 @@ function InititalBanners() {
       ? {
           width: `${pxFull}%`,
           justifyContent: "space-evenly",
-          
-          cursor:"default",
+
+          cursor: "default",
         }
       : {
           width: `${pxMiddle}%`,
@@ -70,8 +71,8 @@ function InititalBanners() {
       ? {
           width: `${pxFull}%`,
           justifyContent: "space-evenly",
-     
-          cursor:"default",
+
+          cursor: "default",
         }
       : {
           width: `${pxMiddle}%`,
@@ -81,8 +82,8 @@ function InititalBanners() {
       ? {
           width: `${pxFull}%`,
           justifyContent: "space-evenly",
-  
-          cursor:"default"
+
+          cursor: "default",
         }
       : {
           width: `${pxMiddle}%`,
@@ -92,23 +93,28 @@ function InititalBanners() {
 
   return (
     <>
-    <StyledNavContent>
-    <StyledBtn>
-        <StyledBtnP>Open to Work !</StyledBtnP>
-      </StyledBtn>
-      <StyledNavBanner>
-     
-        {banners.map((item, index) => (
-          <StyledCarrosel
-            key={item.id}
-            imageUrl={item.url}
-            style={stylesArray[index]}
-            onClick={() => handleClick(item.id)}
-          >
-            <StyledIcon src={item.icon} width="56px" height="56px" />
-          </StyledCarrosel>
-        ))}
-      </StyledNavBanner>
+      <StyledNavContent>
+        <StyledBtn>
+          <StyledBtnP>Open to Work !</StyledBtnP>
+        </StyledBtn>
+        <StyledNavBanner>
+          {banners.map((item, index) => (
+            <StyledCarrosel
+              key={item.id}
+              imageUrl={item.url}
+              style={stylesArray[index]}
+              onClick={() => handleClick(item.id)}
+            >
+              <StyledIconNav>
+                <StyledIcon
+                  src={item.icon}
+                  width="56px"
+                  height="56px"
+                ></StyledIcon>
+              </StyledIconNav>
+            </StyledCarrosel>
+          ))}
+        </StyledNavBanner>
       </StyledNavContent>
     </>
   );
