@@ -40,8 +40,8 @@ function InititalBanners() {
     }
   };
 
-  const pxFull =85 ;
-  const pxMiddle = 5;
+  const pxFull =100 ;
+  const pxMiddle = 7;
 
   const stylesArray = [
     witdh1

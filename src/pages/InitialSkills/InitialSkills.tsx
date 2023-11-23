@@ -1,3 +1,6 @@
+
+// import { useState } from 'react';
+import { useState } from 'react';
 import {
   StyledSkillContent,
   StyledSkillDot,
@@ -5,26 +8,58 @@ import {
   StyledSkillTitle,
   StyledIconsSkill,
   StyledIconsSkillContain,
-StyledNavIcons
+  StyledNavIcons,
+  StyledContainSec,
+  StyledNavText
+} from '../../components/Skills.style';
 
-} from "../../components/Skills.style";
-import { skills } from "../../types/skills";
+
+
+import { skills } from '../../types/skills';
 
 function InitialSkills() {
+  const [indexItem, setIndexItem] = useState<number>(4);
+  const [selectedId, setSelectedId] = useState<number>();
+  
+  const foundHover = skills.find((item, index) => index === indexItem);
+
+
+  }
+
   return (
     <>
       <StyledSkillNav>
         <StyledSkillContent>
           <StyledSkillTitle>Habilidades</StyledSkillTitle>
           <StyledSkillDot>.</StyledSkillDot>
-          </StyledSkillContent>
+        </StyledSkillContent>
+
+        <StyledContainSec onMouseEnter={() =>handleMouseEnter()}>
           <StyledNavIcons>
-          {skills.map((item) => (
-            <StyledIconsSkillContain>
-        <StyledIconsSkill key={item.id}  src={item.icon} width={item.width} height={item.height}/> 
-        </StyledIconsSkillContain>
-        ))}
-</StyledNavIcons>
+            {skills.map((item) => (
+                        
+                <StyledIconsSkillContain  key={item.id}>
+                
+                
+                <StyledIconsSkill
+                    src={item.icon}
+                    width={item.width}
+                    height={item.height}
+                   
+                  />
+                  
+                </StyledIconsSkillContain >
+       
+          
+              
+            ))}
+      
+          </StyledNavIcons>
+        
+<StyledNavText></StyledNavText>     
+          
+        </StyledContainSec>
+      
       </StyledSkillNav>
     </>
   );

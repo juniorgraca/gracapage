@@ -13,6 +13,7 @@ export const StyledNavBanner = styled.div`
   display: flex;
   align-content: center;
   justify-content: center;
+  gap: 5px;
 `;
 export const StyledBtn = styled.button`
   margin: 0 auto;
@@ -22,7 +23,7 @@ export const StyledBtn = styled.button`
   border: none;
   width: 162px;
   height: 36px;
-  flex-shrink: 0;
+ 
   display: block;
   &:hover {
     background: #eece5b;
@@ -49,7 +50,7 @@ export const StyledCarrosel = styled.div<props>`
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 50px;
-  margin: 0 0 0 3px;
+  
   transition: 0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955);
   cursor: pointer;
   align-items: start;

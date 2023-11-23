@@ -21,6 +21,7 @@ export const StyledSkillTitle = styled.h2`
   font-weight: 400;
   line-height: normal;
 `;
+
 export const StyledSkillDot = styled.p`
   overflow: hidden;
   color: #f9c202;
@@ -31,17 +32,32 @@ export const StyledSkillDot = styled.p`
   font-weight: 400;
   line-height: normal;
 `;
+
+export const StyledContainSec= styled.section`
+ display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 18px 18px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". .";
+
+
+
+`
 export const StyledIconsSkillContain= styled.div`
- width: 272px;
-height: 205px;
+ width: 130px;
+height: 150px;
 border-radius: 0.3125rem;
-border: 1px solid rgba(249, 194, 2, 0.30);
-background: #232534;
+border: 1px solid #F9C20233;
+background: #15161F;
 display:flex;
 align-items:center;
 cursor: pointer;
 justify-content:center; &:hover{
-  background: rgba(249, 195, 2, 0.048);
+border: 1px solid #f9c202;
+
+
 }
 `
 export const StyledIconsSkill = styled.img`
@@ -51,15 +67,22 @@ export const StyledIconsSkill = styled.img`
 
 export const StyledNavIcons= styled.div`
 display: grid;
-width: 1440px;
-margin: 0 auto;
 
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
-  grid-template-rows: 1fr 1fr; 
-  gap: 18px 18px; 
+margin: 0 auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr; 
+  grid-template-rows: 1fr 1fr 1fr; 
+gap: 15px 15px;
   grid-template-areas: 
-    ". . . . ."
-    ". . . . ."; 
+    ". . . ."
+    ". . . ."
+    ". . . ."; 
+
     
+`
+
+export const StyledNavText = styled.div`
+ background-color:red;
+ width:300px;
+ height:400px
 
 `
