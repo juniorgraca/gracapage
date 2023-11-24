@@ -23,7 +23,7 @@ export const StyledBtn = styled.button`
   border: none;
   width: 162px;
   height: 36px;
- 
+
   display: block;
   &:hover {
     background: #eece5b;
@@ -50,15 +50,11 @@ export const StyledCarrosel = styled.div<props>`
   background-repeat: no-repeat;
 
   border-radius: 50px;
-<<<<<<< HEAD
-  
-=======
 
   background-position: center;
 
   background-size: cover;
 
->>>>>>> 43ae533f3be35cc884f6be4f4a8f3cac0c6c1262
   transition: 0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955);
   cursor: pointer;
   align-items: start;

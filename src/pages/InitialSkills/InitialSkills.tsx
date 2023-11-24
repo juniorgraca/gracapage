@@ -1,6 +1,6 @@
-
 // import { useState } from 'react';
-import { useState } from 'react';
+// import { useState } from "react";
+
 import {
   StyledSkillContent,
   StyledSkillDot,
@@ -8,23 +8,16 @@ import {
   StyledSkillTitle,
   StyledIconsSkill,
   StyledIconsSkillContain,
-  StyledNavIcons,
   StyledContainSec,
-  StyledNavText
-} from '../../components/Skills.style';
+} from "../../components/Skills.style";
 
-
-
-import { skills } from '../../types/skills';
+import { skills } from "../../types/skills";
 
 function InitialSkills() {
-  const [indexItem, setIndexItem] = useState<number>(4);
-  const [selectedId, setSelectedId] = useState<number>();
-  
-  const foundHover = skills.find((item, index) => index === indexItem);
+  // const [indexItem, setIndexItem] = useState<number>(4);
+  // const [selectedId, setSelectedId] = useState<number>();
 
-
-  }
+  // const foundHover = skills.find((item, index) => index === indexItem);
 
   return (
     <>
@@ -34,32 +27,17 @@ function InitialSkills() {
           <StyledSkillDot>.</StyledSkillDot>
         </StyledSkillContent>
 
-        <StyledContainSec onMouseEnter={() =>handleMouseEnter()}>
-          <StyledNavIcons>
-            {skills.map((item) => (
-                        
-                <StyledIconsSkillContain  key={item.id}>
-                
-                
-                <StyledIconsSkill
-                    src={item.icon}
-                    width={item.width}
-                    height={item.height}
-                   
-                  />
-                  
-                </StyledIconsSkillContain >
-       
-          
-              
-            ))}
-      
-          </StyledNavIcons>
-        
-<StyledNavText></StyledNavText>     
-          
+        <StyledContainSec>
+          {skills.map((item) => (
+            <StyledIconsSkillContain key={item.id}>
+              <StyledIconsSkill
+                src={item.icon}
+                width={item.width}
+                height={item.height}
+              />
+            </StyledIconsSkillContain>
+          ))}
         </StyledContainSec>
-      
       </StyledSkillNav>
     </>
   );

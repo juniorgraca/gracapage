@@ -32,43 +32,21 @@ export const StyledSkillDot = styled.p`
   font-weight: 400;
   line-height: normal;
 `;
-<<<<<<< HEAD
 
-export const StyledContainSec= styled.section`
- display: grid;
+export const StyledContainSec = styled.section`
+  display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   gap: 18px 18px;
   grid-auto-flow: row;
-  grid-template-areas:
-    ". .";
-
-
-
-`
-export const StyledIconsSkillContain= styled.div`
- width: 130px;
-height: 150px;
-border-radius: 0.3125rem;
-border: 1px solid #F9C20233;
-background: #15161F;
-display:flex;
-align-items:center;
-cursor: pointer;
-justify-content:center; &:hover{
-border: 1px solid #f9c202;
-
-
-}
-`
-export const StyledIconsSkill = styled.img`
-=======
+  grid-template-areas: ". .";
+`;
 export const StyledIconsSkillContain = styled.div`
-  width: 272px;
-  height: 205px;
+  width: 130px;
+  height: 150px;
   border-radius: 0.3125rem;
-  border: 1px solid rgba(249, 194, 2, 0.3);
-  background: #232534;
+  border: 1px solid #f9c20233;
+  background: #15161f;
   display: flex;
   align-items: center;
   cursor: pointer;
@@ -78,43 +56,3 @@ export const StyledIconsSkillContain = styled.div`
   }
 `;
 export const StyledIconsSkill = styled.img``;
->>>>>>> 43ae533f3be35cc884f6be4f4a8f3cac0c6c1262
-
-export const StyledNavIcons = styled.div`
-  display: grid;
-  width: 1440px;
-  margin: 0 auto;
-
-<<<<<<< HEAD
-`
-
-export const StyledNavIcons= styled.div`
-display: grid;
-
-margin: 0 auto;
-  grid-template-columns: 1fr 1fr 1fr 1fr; 
-  grid-template-rows: 1fr 1fr 1fr; 
-gap: 15px 15px;
-  grid-template-areas: 
-    ". . . ."
-    ". . . ."
-    ". . . ."; 
-
-    
-`
-
-export const StyledNavText = styled.div`
- background-color:red;
- width:300px;
- height:400px
-
-`
-=======
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 18px 18px;
-  grid-template-areas:
-    ". . . . ."
-    ". . . . .";
-`;
->>>>>>> 43ae533f3be35cc884f6be4f4a8f3cac0c6c1262

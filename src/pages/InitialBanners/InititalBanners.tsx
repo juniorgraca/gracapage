@@ -41,13 +41,8 @@ function InititalBanners() {
     }
   };
 
-<<<<<<< HEAD
-  const pxFull =100 ;
+  const pxFull = 100;
   const pxMiddle = 7;
-=======
-  const pxFull = 85;
-  const pxMiddle = 5;
->>>>>>> 43ae533f3be35cc884f6be4f4a8f3cac0c6c1262
 
   const stylesArray = [
     witdh1
