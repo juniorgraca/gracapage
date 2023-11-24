@@ -9,7 +9,7 @@ import {
   StyledCarrosel,
   StyledIcon,
   StyledNavContent,
-  StyledIconNav,
+ 
 } from "../../components/InititalBanners.style";
 
 function InititalBanners() {
@@ -105,13 +105,13 @@ function InititalBanners() {
               style={stylesArray[index]}
               onClick={() => handleClick(item.id)}
             >
-              <StyledIconNav>
+             
                 <StyledIcon
                   src={item.icon}
                   width="56px"
                   height="56px"
                 ></StyledIcon>
-              </StyledIconNav>
+           
             </StyledCarrosel>
           ))}
         </StyledNavBanner>

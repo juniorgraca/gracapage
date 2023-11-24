@@ -56,19 +56,7 @@ export const StyledCarrosel = styled.div<props>`
   display: flex;
 `;
 
-export const StyledIconNav = styled.div`
-  display: flex;
-  border-radius: 50px;
-  margin-top: -0.6px;
-  background: linear-gradient(
-    180deg,
-    #000 -32.66%,
-    rgba(142, 111, 0, 0) 92.96%
-  );
-  width: 100%;
-  justify-content: center;
-  height: 190px;
-`;
+
 export const StyledIcon = styled.img`
   display: flex;
   margin-top: 10px;

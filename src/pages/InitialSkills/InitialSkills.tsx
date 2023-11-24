@@ -20,9 +20,6 @@ function InitialSkills() {
   const [indexItem, setIndexItem] = useState<number|null>(1);
   const [textMouse, setTextMouse] = useState<boolean>(false)
   const foundHover = skills.find((index) => index.id === indexItem);
-
-
-
   const hoverAdd = (id: number) => {
     if (id ===  id ) {
       setIndexItem(id);
