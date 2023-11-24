@@ -23,7 +23,6 @@ export const StyledBtn = styled.button`
   border: none;
   width: 162px;
   height: 36px;
-
   display: block;
   &:hover {
     background: #eece5b;

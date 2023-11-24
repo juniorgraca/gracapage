@@ -9,24 +9,30 @@ import {
   StyledIconsSkillContain,
   StyledContainSec,
   StyledIconNav,
+  StyledContentText,
+  StyledContenPSkills,
+  StyledContentTitle,
 } from "../../components/Skills.style";
 
 import { skills } from "../../types/skills";
 
 function InitialSkills() {
-  const [indexItem, setIndexItem] = useState<number>();
-  const [selectedId, setSelectedId] = useState<number>();
-
+  const [indexItem, setIndexItem] = useState<number|null>(1);
+  const [textMouse, setTextMouse] = useState<boolean>(false)
   const foundHover = skills.find((item, index) => index === indexItem);
 
+
+
   const hoverAdd = (id: number) => {
-    if (id >= 0 && id <= 12) {
+    if (id ===  id ) {
       setIndexItem(id);
-      console.log(indexItem);
+    (setTextMouse(true))
+   
     }
   };
-  const hoverRemove = () => {
-    setIndexItem(0);
+  const hoverRemove = () => { 
+    (setTextMouse(false))
+    setIndexItem(null);
   };
   return (
     <>
@@ -41,17 +47,25 @@ function InitialSkills() {
               <StyledIconsSkillContain
                 key={item.id}
                 onMouseEnter={() => hoverAdd(item.id)}
-                onMouseDown={() => hoverRemove()}
+                onMouseLeave={() =>hoverRemove()}
               >
                 <StyledIconsSkill
                   src={item.icon}
                   width={item.width}
                   height={item.height}
                 />
-                <StyledSkillTitle>{item.id}</StyledSkillTitle>
-              </StyledIconsSkillContain>
-            ))}
+                <StyledSkillTitle></StyledSkillTitle>
+       
+              </StyledIconsSkillContain> 
+
+            ))}        
           </StyledContainSec>
+          <StyledContentText>
+            <StyledContentTitle>{textMouse ?foundHover?.title : 'Coloque o cursor do mouse no Card para ler sobre cada item'}</StyledContentTitle>
+        
+            <StyledContenPSkills> {foundHover?.descr}</StyledContenPSkills>
+          </StyledContentText>
+ 
         </StyledIconNav>
       </StyledSkillNav>
     </>

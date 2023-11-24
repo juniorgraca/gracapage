@@ -13,7 +13,7 @@ export const StyledSkillContent = styled.div`
 
 export const StyledSkillTitle = styled.h2`
   overflow: hidden;
-  color: #fff;
+  color: #e6e6e6;
   text-overflow: ellipsis;
   font-family: MonaSans;
   font-size: 36px;
@@ -37,7 +37,6 @@ export const StyledContainSec = styled.section`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-
   grid-template-areas:
     ". . . ."
     ". . . ."
@@ -47,7 +46,6 @@ export const StyledContainSec = styled.section`
 export const StyledIconNav = styled.div`
   width: 1440px;
   margin: 0 auto;
-
   display: flex;
 `;
 export const StyledIconsSkillContain = styled.div`
@@ -65,3 +63,29 @@ export const StyledIconsSkillContain = styled.div`
   }
 `;
 export const StyledIconsSkill = styled.img``;
+export const StyledContentText = styled.div`
+
+margin-left:30px
+`
+
+export const StyledContenPSkills = styled.p`
+margin-top:10px;
+color: #e6e6e6;
+  font-family: MonaSans;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+`
+
+export const StyledContentTitle = styled.h2`
+
+overflow: hidden;
+  color: #e6e6e6;
+  font-family: MonaSans;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+`
