@@ -19,7 +19,7 @@ import { skills } from "../../types/skills";
 function InitialSkills() {
   const [indexItem, setIndexItem] = useState<number|null>(1);
   const [textMouse, setTextMouse] = useState<boolean>(false)
-  const foundHover = skills.find((item, index) => index === indexItem);
+  const foundHover = skills.find((index) => index.id === indexItem);
 
 
 
