@@ -48,13 +48,9 @@ export const StyledCarrosel = styled.div<props>`
   height: 545px;
   background-image: url("${(props) => props.imageUrl}");
   background-repeat: no-repeat;
-
   border-radius: 50px;
-
   background-position: center;
-
   background-size: cover;
-
   transition: 0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955);
   cursor: pointer;
   align-items: start;

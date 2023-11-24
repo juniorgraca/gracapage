@@ -35,11 +35,20 @@ export const StyledSkillDot = styled.p`
 
 export const StyledContainSec = styled.section`
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
-  gap: 18px 18px;
-  grid-auto-flow: row;
-  grid-template-areas: ". .";
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+
+  grid-template-areas:
+    ". . . ."
+    ". . . ."
+    ". . . .";
+  gap: 15px;
+`;
+export const StyledIconNav = styled.div`
+  width: 1440px;
+  margin: 0 auto;
+
+  display: flex;
 `;
 export const StyledIconsSkillContain = styled.div`
   width: 130px;

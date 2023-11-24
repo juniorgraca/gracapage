@@ -1,5 +1,4 @@
-// import { useState } from 'react';
-// import { useState } from "react";
+import { useState } from "react";
 
 import {
   StyledSkillContent,
@@ -9,16 +8,26 @@ import {
   StyledIconsSkill,
   StyledIconsSkillContain,
   StyledContainSec,
+  StyledIconNav,
 } from "../../components/Skills.style";
 
 import { skills } from "../../types/skills";
 
 function InitialSkills() {
-  // const [indexItem, setIndexItem] = useState<number>(4);
-  // const [selectedId, setSelectedId] = useState<number>();
+  const [indexItem, setIndexItem] = useState<number>();
+  const [selectedId, setSelectedId] = useState<number>();
 
-  // const foundHover = skills.find((item, index) => index === indexItem);
+  const foundHover = skills.find((item, index) => index === indexItem);
 
+  const hoverAdd = (id: number) => {
+    if (id >= 0 && id <= 12) {
+      setIndexItem(id);
+      console.log(indexItem);
+    }
+  };
+  const hoverRemove = () => {
+    setIndexItem(0);
+  };
   return (
     <>
       <StyledSkillNav>
@@ -26,18 +35,24 @@ function InitialSkills() {
           <StyledSkillTitle>Habilidades</StyledSkillTitle>
           <StyledSkillDot>.</StyledSkillDot>
         </StyledSkillContent>
-
-        <StyledContainSec>
-          {skills.map((item) => (
-            <StyledIconsSkillContain key={item.id}>
-              <StyledIconsSkill
-                src={item.icon}
-                width={item.width}
-                height={item.height}
-              />
-            </StyledIconsSkillContain>
-          ))}
-        </StyledContainSec>
+        <StyledIconNav>
+          <StyledContainSec>
+            {skills.map((item) => (
+              <StyledIconsSkillContain
+                key={item.id}
+                onMouseEnter={() => hoverAdd(item.id)}
+                onMouseDown={() => hoverRemove()}
+              >
+                <StyledIconsSkill
+                  src={item.icon}
+                  width={item.width}
+                  height={item.height}
+                />
+                <StyledSkillTitle>{item.id}</StyledSkillTitle>
+              </StyledIconsSkillContain>
+            ))}
+          </StyledContainSec>
+        </StyledIconNav>
       </StyledSkillNav>
     </>
   );
