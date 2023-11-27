@@ -8,12 +8,10 @@ export const StyledNavContent = styled.nav`
   margin-top: 40px;
 `;
 export const StyledNavBanner = styled.div`
-  width: 1440px;
   margin: 0 auto;
   display: flex;
   align-content: center;
   justify-content: center;
-  gap: 5px;
 `;
 export const StyledBtn = styled.button`
   margin: 0 auto;
@@ -38,16 +36,16 @@ export const StyledBtnP = styled.p`
   font-weight: 400;
   cursor: pointer;
   line-height: normal;
+
   &:hover {
     color: #424242;
   }
 `;
 
 export const StyledCarrosel = styled.div<props>`
-  height: 545px;
+  height: 650px;
   background-image: url("${(props) => props.imageUrl}");
   background-repeat: no-repeat;
-  border-radius: 50px;
   background-position: center;
   background-size: cover;
   transition: 0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955);
@@ -56,8 +54,40 @@ export const StyledCarrosel = styled.div<props>`
   display: flex;
 `;
 
-
-export const StyledIcon = styled.img`
+export const StyledTextBanner = styled.div`
+  width: 100%;
+  height: fit-content;
   display: flex;
+  justify-content: center;
+`;
+export const StyledIcon = styled.img`
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-evenly;
+`;
+export const StyledIconText = styled.div`
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "."
+    ".";
+`;
+export const StyledText = styled.div`
   margin-top: 10px;
+  display: flex;
+  justify-content: space-evenly;
+`;
+
+export const StyledTexth3 = styled.h3`
+  overflow: hidden;
+  color: #f9c202;
+  font-family: MonaSans;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 `;

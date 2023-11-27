@@ -17,18 +17,17 @@ import {
 import { skills } from "../../types/skills";
 
 function InitialSkills() {
-  const [indexItem, setIndexItem] = useState<number|null>(1);
-  const [textMouse, setTextMouse] = useState<boolean>(false)
+  const [indexItem, setIndexItem] = useState<number | null>(null);
+  const [textMouse, setTextMouse] = useState<boolean>(false);
   const foundHover = skills.find((index) => index.id === indexItem);
   const hoverAdd = (id: number) => {
-    if (id ===  id ) {
+    if (id === id) {
       setIndexItem(id);
-    (setTextMouse(true))
-   
+      setTextMouse(true);
     }
   };
-  const hoverRemove = () => { 
-    (setTextMouse(false))
+  const hoverRemove = () => {
+    setTextMouse(false);
     setIndexItem(null);
   };
   return (
@@ -44,7 +43,7 @@ function InitialSkills() {
               <StyledIconsSkillContain
                 key={item.id}
                 onMouseEnter={() => hoverAdd(item.id)}
-                onMouseLeave={() =>hoverRemove()}
+                onMouseLeave={() => hoverRemove()}
               >
                 <StyledIconsSkill
                   src={item.icon}
@@ -52,17 +51,18 @@ function InitialSkills() {
                   height={item.height}
                 />
                 <StyledSkillTitle></StyledSkillTitle>
-       
-              </StyledIconsSkillContain> 
-
-            ))}        
+              </StyledIconsSkillContain>
+            ))}
           </StyledContainSec>
           <StyledContentText>
-            <StyledContentTitle>{textMouse ?foundHover?.title : 'Coloque o cursor do mouse no Card para ler sobre cada item'}</StyledContentTitle>
-        
+            <StyledContentTitle>
+              {textMouse
+                ? foundHover?.title
+                : "Coloque o cursor do mouse no Card para ler sobre cada item"}
+            </StyledContentTitle>
+
             <StyledContenPSkills> {foundHover?.descr}</StyledContenPSkills>
           </StyledContentText>
- 
         </StyledIconNav>
       </StyledSkillNav>
     </>
