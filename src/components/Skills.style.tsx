@@ -3,6 +3,8 @@ import { keyframes } from "styled-components";
 
 export const StyledSkillNav = styled.nav`
   background-color: #191b28;
+  padding-bottom:96px;
+  padding-top:96px;
 `;
 
 export const StyledSkillContent = styled.div`
@@ -53,10 +55,10 @@ export const StyledIconNav = styled.div`
 const breatheAnimation = keyframes`
 
   0% {
-    transform: scale(1);
+    transform: scale(0.9);
   }
   100% {
-    transform: scale(1.1);
+    transform: scale(1);
   }
 `;
 
