@@ -1,38 +1,27 @@
-
 import { projects } from "../../types/projects";
 import {
   StyledProjectImg,
   TitleNav,
   Pnav,
-  ContentNav
+  ContentNav,
+  TitleandImg,
 } from "../../components/Projects.style";
 
 export default function Projects() {
-
   const MapAdd = () => {
-    
     const mappedItems = projects.map((item) => (
-      <Pnav>
-      <TitleNav>{item.name}
-        {item.icon.map((icon, ) => (
+      <TitleandImg className={item.class}>
+        <TitleNav>
+          {item.name}
+          {item.icon.map((icon) => (
             <StyledProjectImg src={icon} alt="Ícone" />
-        ))}
+          ))}
         </TitleNav>
-        <ContentNav>   {item.desc}</ContentNav>
-     
-      </Pnav>
-  
+        <ContentNav imgeUrl={item.desc}> {item.desc}</ContentNav>
+      </TitleandImg>
     ));
     return mappedItems;
   };
 
-
-  return (
-    <>
-  
-      {MapAdd()}
-
- 
-    </>
-  );
+  return <Pnav>{MapAdd()}</Pnav>;
 }
