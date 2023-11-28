@@ -8,7 +8,6 @@ export const StyledSkillNav = styled.nav`
 `;
 
 export const StyledSkillContent = styled.div`
-  padding-top: 26px;
   width: 1440px;
   display: flex;
   margin: 0 auto;

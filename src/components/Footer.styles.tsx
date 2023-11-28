@@ -1,36 +1,45 @@
 import styled from "styled-components";
 
 export const StyledFooter = styled.section`
-  margin: 0 auto;
-  width: 1440px;
-  height: 100px;
-`;
-
-export const StyledTextYellow = styled.h2`
-  overflow: hidden;
-  color: #f9c202;
-  font-family: MonaSans;
-  font-size: 22px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-`;
-export const StyledTexth3White = styled.h3`
-  overflow: hidden;
-  color: #e6e6e6;
-  font-family: MonaSans;
-  font-size: 22px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
+background-color:#191B28;
 `;
 
 export const StyledFooterContent = styled.div`
-  margin-top: 30px;
+ margin: 96px auto 0px;
+  width: 1440px;
+  height: 100px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+`;
+export const StyledTextYellow = styled.h2`
+display:flex;
+`;
+export const StyledTexth3White = styled.h3`
 
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 `;
 
-export const StyledLogoIcon = styled.img``;
+
+export const StyledLogoIcon = styled.img`
+margin: 0px 0px 0px 20px;
+display:flex;`
+
+export const StyledTextReserved = styled.h3`
+color: #D9D9D9;
+font-family: Inter;
+font-size: 0.75rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+display:flex;`
+
+
+export const StyledTextReservedYellow = styled.p`
+color: #F9C202;
+font-family: Inter;
+font-size: 0.75rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin: 0px 5px;
+;`

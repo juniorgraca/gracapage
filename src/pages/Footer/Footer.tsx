@@ -4,6 +4,8 @@ import {
   StyledFooterContent,
   StyledLogoIcon,
   StyledTexth3White,
+  StyledTextReserved,
+  StyledTextReservedYellow,
 } from "../../components/Footer.styles";
 
 import styledLogo from "/icon-skills/STYLEDCOMP-ICON.png";
@@ -15,13 +17,16 @@ function Footer() {
     <div>
       <StyledFooter>
         <StyledFooterContent>
+          <StyledTextReserved>
+          © 2023<StyledTextReservedYellow>Junior Graça.</StyledTextReservedYellow>  Todos os direitos reservados.
+          </StyledTextReserved>
           <StyledTexth3White>
-            <StyledLogoIcon src={logoJr}></StyledLogoIcon>
+            <StyledLogoIcon width="265px" height="47px" src={logoJr}></StyledLogoIcon>
           </StyledTexth3White>
           <StyledTextYellow>
-            <StyledTextYellow>Tecnologia Usadas:</StyledTextYellow>
-            <StyledLogoIcon src={reactLogo} />
-            <StyledLogoIcon src={styledLogo} />
+            <StyledTextReserved>Tecnologia Usadas:</StyledTextReserved>
+            <StyledLogoIcon width="18px" height="17px" src={reactLogo} />
+            <StyledLogoIcon width="32px" height="15px"  src={styledLogo} />
           </StyledTextYellow>
         </StyledFooterContent>
       </StyledFooter>
