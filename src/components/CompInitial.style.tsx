@@ -30,6 +30,11 @@ export const StyledSection = styled.div`
   }
 `;
 
+
+
+export const Link = styled.a`
+
+`
 export const StyledPictureContain = styled.div`
   display: flex;
   align-items: end;

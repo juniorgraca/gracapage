@@ -7,12 +7,11 @@ import {
   StyledBtnP,
   StyledNavBanner,
   StyledCarrosel,
-  StyledIcon,
   StyledNavContent,
   StyledTextBanner,
   StyledText,
   StyledIconText,
-  StyledTexth3,
+  
 } from "../../components/InititalBanners.style";
 
 function InititalBanners() {
@@ -98,9 +97,9 @@ function InititalBanners() {
             >
               <StyledTextBanner>
                 <StyledIconText>
-                  <StyledIcon src={item.icon} width="56px" height="56px" />
+                  {/* <StyledIcon src={item.icon} width="56px" height="56px" /> */}
                   <StyledText>
-                    <StyledTexth3> {item.title}</StyledTexth3>
+                    {/* <StyledTexth3> {item.title}</StyledTexth3> */}
                   </StyledText>
                 </StyledIconText>
               </StyledTextBanner>

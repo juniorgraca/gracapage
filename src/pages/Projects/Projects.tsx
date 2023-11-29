@@ -10,9 +10,11 @@ import {
 } from "../../components/Projects.style";
 
 export default function Projects() {
+
+
+
   const MapAdd = () => {
     const mappedItems = projects.map((item) => (
-      
       <TitleandImg  className={item.class}>
          
         <TitleNav>

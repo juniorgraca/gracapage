@@ -4,9 +4,9 @@ export const NavBarContent = styled.div`
   width: 100%;
   height: 100px;
   display: flex;
-  padding: 0px 400px;
+ 
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
 `;
 
 export const LogoImg = styled.img``;
@@ -24,6 +24,6 @@ export const MenuLi = styled.li`
   padding-right: 15px;
   cursor:pointer;
   line-height: normal;&:hover{
-  color: #a7a7a7;
+  color: #f9c202;
 }
 `;

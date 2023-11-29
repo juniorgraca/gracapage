@@ -8,8 +8,11 @@ import {
   StyledPictureContain,
   StyledIconSocial,
   StyledIconSocialContain,
-  StyledIconArea,
+  StyledIconArea,Link
+
 } from "../../components/CompInitial.style";
+
+
 
 function InitialNav() {
   return (
@@ -21,7 +24,7 @@ function InitialNav() {
           </StyledPictureContain>
           <StyledTextArea>
             <StyledTextTitle>Quem sou</StyledTextTitle>
-            <StyledTextDesc>
+            <StyledTextDesc >
               Me chamo Junior Graça, tenho 27 anos e sou apaixonado por criar
               experiências digitais incríveis. Como Frontend Developer e UI
               Designer, minha jornada profissional é pautada na busca incessante
@@ -33,20 +36,26 @@ function InitialNav() {
             </StyledTextDesc>
 
             <StyledIconArea>
+              <Link href="https://www.behance.net/juniorgraca" target="_blank" rel="noopener noreferrer">
               <StyledIconSocialContain>
                 <StyledIconSocial
                   src="icon-who/be.png"
                   width="44px"
                   height="30px"
-                />
+                />   
               </StyledIconSocialContain>
+         </Link>
+              <Link href="https://github.com/juniorgraca" target="_blank" rel="noopener noreferrer">
               <StyledIconSocialContain>
+             
                 <StyledIconSocial
                   src="icon-who/gi.png"
                   width="36px"
                   height="36px"
                 />
               </StyledIconSocialContain>
+                </Link>
+              <Link href="https://www.linkedin.com/in/josé-carlos-g-júnior-b22094240/" target="_blank" rel="noopener noreferrer">
               <StyledIconSocialContain>
                 <StyledIconSocial
                   src="icon-who/li.png"
@@ -54,6 +63,7 @@ function InitialNav() {
                   height="36px"
                 />
               </StyledIconSocialContain>
+                </Link>
             </StyledIconArea>
           </StyledTextArea>
         </StyledSection>

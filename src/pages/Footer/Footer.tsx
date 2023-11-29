@@ -12,7 +12,12 @@ import styledLogo from "/icon-skills/STYLEDCOMP-ICON.png";
 import reactLogo from "/icon-skills/REACT-ICON.png";
 import logoJr from "/Logo.svg";
 
+
 function Footer() {
+
+
+
+
   return (
     <div>
       <StyledFooter>
