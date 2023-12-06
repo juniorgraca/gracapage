@@ -4,14 +4,13 @@ import InititalBanners from "./pages/InitialBanners/InititalBanners";
 import InitialSkills from "./pages/InitialSkills/InitialSkills";
 import Footer from "./pages/Footer/Footer";
 import Projects from "./pages/Projects/Projects";
-import GithubComments from "./pages/GithubPerfils/GithubComments"
+
 
 function App() {
   return (
     <div>
       <div>
         <>
-        <GithubComments></GithubComments>
           <NavBar></NavBar>
           <InititalBanners></InititalBanners>
           <InitialNav></InitialNav>

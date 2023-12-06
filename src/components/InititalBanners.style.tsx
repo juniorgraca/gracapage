@@ -5,8 +5,10 @@ interface props {
 }
 
 export const StyledNavContent = styled.nav`
-  margin-top: 40px;
+ padding-top:70px;
 `;
+
+
 export const StyledNavBanner = styled.div`
   margin: 0 auto;
   display: flex;
@@ -15,7 +17,7 @@ export const StyledNavBanner = styled.div`
 `;
 export const StyledBtn = styled.button`
   margin: 0 auto;
-  margin-bottom: 30px;
+  margin-bottom:60px;
   border-radius: 20px;
   background: #f9c202;
   border: none;
@@ -43,6 +45,7 @@ export const StyledBtnP = styled.p`
 `;
 
 export const StyledCarrosel = styled.div<props>`
+
   height: 650px;
   background-image: url("${(props) => props.imageUrl}");
   background-repeat: no-repeat;

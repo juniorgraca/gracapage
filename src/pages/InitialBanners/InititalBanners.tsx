@@ -11,6 +11,7 @@ import {
   StyledTextBanner,
   StyledText,
   StyledIconText,
+
   
 } from "../../components/InititalBanners.style";
 
@@ -83,8 +84,10 @@ function InititalBanners() {
 
   return (
     <>
+        
       <StyledNavContent>
-        <StyledBtn>
+      <StyledBtn>
+   
           <StyledBtnP>Open to Work !</StyledBtnP>
         </StyledBtn>
         <StyledNavBanner>

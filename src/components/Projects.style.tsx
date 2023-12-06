@@ -75,7 +75,6 @@ export const TitleNav = styled.div`
   align-items: center;
   justify-content: space-between;
   padding: 0px 20px;
-
 `;
 
 export const ContentNav = styled.div<props>`
