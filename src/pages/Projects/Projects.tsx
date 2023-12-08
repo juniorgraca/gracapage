@@ -6,7 +6,7 @@ import {
   ContentNav,
   TitleandImg,
   TitleNavContain,
-  TitleNavIconContain,StyledSkillTitle,StyledSkillDot,PnavContent
+  TitleNavIconContain,StyledSkillTitle,StyledSkillDot,PnavContent,TitleProject
 } from "../../components/Projects.style";
 
 export default function Projects() {
@@ -27,7 +27,7 @@ export default function Projects() {
           ))}
         </TitleNavIconContain>
         </TitleNav>
-        <ContentNav imgeUrl={item.desc}> {item.desc}</ContentNav>
+        <ContentNav imgeUrl={item.img} > <TitleProject>{item.desc}</TitleProject></ContentNav>
       </TitleandImg>
     ));
     return mappedItems;

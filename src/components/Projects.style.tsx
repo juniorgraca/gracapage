@@ -47,12 +47,8 @@ export const Pnav = styled.section`
 `;
 
 export const TitleandImg = styled.div`
-
-  background-color: blue;
   height: 385px;
   width: 33%;
-  
-
   &.container4 {
     margin-top: 70px;
     width: 100%;
@@ -84,13 +80,32 @@ export const ContentNav = styled.div<props>`
   background-position:center;
   background-repeat:no-repeat;
   background-size:cover;
-
+  opacity:0.8;
 `;
 
-export const TitleNavContain = styled.div`
 
+export const TitleNavContain = styled.div`
 `;
 
 export const TitleNavIconContain = styled.div`
-
 `;
+export const TitleProject = styled.p`
+  width:100%;
+  height:100%;
+ 
+  color:#f9c202;
+  font-family: MonaSans;
+  font-size:1.7rem;
+  display:flex;
+  justify-content:center;
+  text-shadow: 1px 2px 0px rgba(0, 0, 0, 0.658);
+  align-items:end;
+
+
+  &:hover {
+ backdrop-filter: blur(23.5px);
+    color:#f9c202;
+    text-shadow: 1px 2px 0px rgba(0, 0, 0, 0.658);
+  } 
+
+`

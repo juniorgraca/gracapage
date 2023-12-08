@@ -1,3 +1,4 @@
+
 import {
   LogoImg,
   NavBarContent,
@@ -13,12 +14,10 @@ function NavBar() {
 
   useEffect(() => {
     const scrollListener = () => {
-      if  (window.scrollY) {
+      if  (window.scrollY == 0) {
         setNavbar(false);
-        
       } else {
         setNavbar(true);
-   
       }
     };
 
@@ -27,15 +26,17 @@ function NavBar() {
       window.removeEventListener("scroll", scrollListener);
     };
   }, []);
+  
 
   const stylesArray = {
-    position: navbar ? "relative" : "fixed",
-    backgroundColor: navbar ? "#191b28" : "#191b28b9",
+    position: navbar ? "fixed" : "relative",
+    backgroundColor: navbar ? "#rgba( 255, 255, 255, 0.35 )" : "",
+    backdropFilter: "blur( 23.5px )",
   };
+  
 
   return (
     <NavBarContent style={stylesArray}>
-
   <NavBarArea>
       <MenuText>
         <MenuLi>Home</MenuLi>
@@ -43,7 +44,7 @@ function NavBar() {
         <MenuLi>Portfolio</MenuLi>
       </MenuText>
 
-      <LogoArea> <LogoImg src={navbar ? "Logo.svg" : "Logobar.svg"}  /></LogoArea>
+      <LogoArea> <LogoImg src={navbar ? "Logobar.svg" : "Logo.svg"}  /></LogoArea>
       <LogoArea> </LogoArea>
     
       </NavBarArea>
