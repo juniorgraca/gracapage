@@ -5,16 +5,15 @@ interface props {
 }
 
 export const PnavContent = styled.div`
-
-  display:flex;
-  width:1440px;
+  display: flex;
+  width: 1440px;
   margin: 96px auto 3px;
-`
+`;
 
 export const StyledProjectImg = styled.img`
   width: 20px;
   height: 20px;
-  margin-left:10px;
+  margin-left: 10px;
 `;
 export const StyledSkillTitle = styled.h2`
   overflow: hidden;
@@ -43,7 +42,7 @@ export const Pnav = styled.section`
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
-  gap:7px;
+  gap: 7px;
 `;
 
 export const TitleandImg = styled.div`
@@ -77,35 +76,32 @@ export const ContentNav = styled.div<props>`
   background-image: url("${(props) => props.imgeUrl}");
   width: 100%;
   height: 100%;
-  background-position:center;
-  background-repeat:no-repeat;
-  background-size:cover;
-  opacity:0.8;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.8;
 `;
 
-
-export const TitleNavContain = styled.div`
+export const TitleNavContain = styled.div``;
+export const ImgView = styled.img`
+  display: flex;
+  margin: 0 auto;
 `;
-
-export const TitleNavIconContain = styled.div`
-`;
-export const TitleProject = styled.p`
-  width:100%;
-  height:100%;
- 
-  color:#f9c202;
-  font-family: MonaSans;
-  font-size:1.7rem;
-  display:flex;
-  justify-content:center;
+export const TitleNavIconContain = styled.div``;
+export const TitleProjectArea = styled.div`
+  backdrop-filter: blur(23.5px);
+  color: #f9c202;
   text-shadow: 1px 2px 0px rgba(0, 0, 0, 0.658);
-  align-items:end;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+`;
+export const TitlePara = styled.p`
+  color: #f9c202;
+  font-family: MonaSans;
+  font-size: 1.7rem;
+  display: flex;
+  justify-content: center;
 
-
-  &:hover {
- backdrop-filter: blur(23.5px);
-    color:#f9c202;
-    text-shadow: 1px 2px 0px rgba(0, 0, 0, 0.658);
-  } 
-
-`
+  text-shadow: 1px 2px 0px rgba(0, 0, 0, 0.658);
+`;
