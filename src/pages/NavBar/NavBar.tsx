@@ -7,11 +7,7 @@ import {
   NavBarArea,
 } from "../../components/NavBar.style";
 import { useState, useEffect } from "react";
-interface props {
-  position: string;
-  backgroundColor: string;
-  backdropFilter: string;
-}
+
 function NavBar() {
   const [navbar, setNavbar] = useState<boolean>(false);
 
@@ -30,7 +26,14 @@ function NavBar() {
     };
   }, []);
 
-  const stylesArray: props = {
+  interface NavBarContentStyles {
+    position: 'fixed' | 'relative'; 
+    backgroundColor: string;
+    backdropFilter: string;
+
+  }
+
+  const stylesArray:NavBarContentStyles = {
     position: navbar ? "fixed" : "relative",
     backgroundColor: navbar ? "#rgba( 255, 255, 255, 0.35 )" : "",
     backdropFilter: "blur( 23.5px )",
@@ -46,7 +49,7 @@ function NavBar() {
         </MenuText>
 
         <LogoArea>
-          {" "}
+      
           <LogoImg src={navbar ? "Logobar.svg" : "Logo.svg"} />
         </LogoArea>
         <LogoArea> </LogoArea>

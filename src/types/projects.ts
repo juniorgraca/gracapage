@@ -11,7 +11,7 @@ interface propsProjects {
 
 const projects: propsProjects[] = [
   {
-    id: 1,
+    id: 0,
     name: "UI - The Mandalorian",
     img: "project-icons/content--img/mand.png",
     desc:"UI - Site The Mandalorian",
@@ -19,7 +19,7 @@ const projects: propsProjects[] = [
     class: "container1",
   },
   {
-    id: 2,
+    id: 1,
     name: "IMC - Calculator",
     img: "project-icons/content--img/imc.png",
     desc:"Projeto de Ui/Dev",
@@ -27,7 +27,7 @@ const projects: propsProjects[] = [
     class: "container2",
   },
   {
-    id: 3,
+    id: 2,
     name: "LOGO - CRJ",
     img: "project-icons/content--img/logo.png",
     desc:"Logo designer - CJR Pisos Industriais",
@@ -38,7 +38,7 @@ const projects: propsProjects[] = [
     class: "container3",
   },
   {
-    id: 4,
+    id: 3,
     name: "UI CARLOS GRAÇA PORTFOLIO",
     img: "project-icons/content--img/port.png",
     desc:"Projeto - UI - DEV Meu Portfolio ",

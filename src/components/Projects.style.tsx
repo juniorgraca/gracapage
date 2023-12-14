@@ -86,15 +86,21 @@ export const TitleNavContain = styled.div``;
 export const ImgView = styled.img`
   display: flex;
   margin: 0 auto;
+
 `;
-export const TitleNavIconContain = styled.div``;
+export const TitleNavIconContain = styled.div`
+`
 export const TitleProjectArea = styled.div`
-  backdrop-filter: blur(23.5px);
   color: #f9c202;
   text-shadow: 1px 2px 0px rgba(0, 0, 0, 0.658);
   width: 100%;
   height: 100%;
-  cursor: pointer;
+  cursor: pointer;&:hover{
+    backdrop-filter: blur(23.5px);
+
+  }
+
+
 `;
 export const TitlePara = styled.p`
   color: #f9c202;
@@ -102,6 +108,5 @@ export const TitlePara = styled.p`
   font-size: 1.7rem;
   display: flex;
   justify-content: center;
-
   text-shadow: 1px 2px 0px rgba(0, 0, 0, 0.658);
 `;

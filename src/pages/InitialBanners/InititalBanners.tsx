@@ -100,9 +100,9 @@ function InititalBanners() {
             >
               <StyledTextBanner>
                 <StyledIconText>
-                  {/* <StyledIcon src={item.icon} width="56px" height="56px" /> */}
+                 
                   <StyledText>
-                    {/* <StyledTexth3> {item.title}</StyledTexth3> */}
+                  
                   </StyledText>
                 </StyledIconText>
               </StyledTextBanner>
