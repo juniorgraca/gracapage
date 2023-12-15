@@ -7,6 +7,7 @@ interface propsProjects {
   icon: string[];
   class: string;
   img:string
+  link:string
 }
 
 const projects: propsProjects[] = [
@@ -17,6 +18,7 @@ const projects: propsProjects[] = [
     desc:"UI - Site The Mandalorian",
     icon: ["project-icons/FIGMA-ICON.svg", "project-icons/PHOTSHOP-ICON.svg"],
     class: "container1",
+    link:"test1"
   },
   {
     id: 1,
@@ -25,6 +27,7 @@ const projects: propsProjects[] = [
     desc:"Projeto de Ui/Dev",
     icon: ["project-icons/TYPESCRIPT-ICON.svg", "project-icons/REACT-ICON.svg"],
     class: "container2",
+    link:"test2"
   },
   {
     id: 2,
@@ -34,14 +37,17 @@ const projects: propsProjects[] = [
     icon: [
       "project-icons/PHOTSHOP-ICON.svg",
       "project-icons/ILLUSTRATOR-ICON.svg",
+      
     ],
     class: "container3",
+    link:"test3"
   },
   {
     id: 3,
     name: "UI CARLOS GRAÇA PORTFOLIO",
     img: "project-icons/content--img/port.png",
     desc:"Projeto - UI - DEV Meu Portfolio ",
+    link:"test4",
     icon: [
       "project-icons/REACT-ICON.svg",
       "project-icons/TYPESCRIPT-ICON.svg",
@@ -52,4 +58,5 @@ const projects: propsProjects[] = [
     ],
     class: "container4",
   },
+  
 ];

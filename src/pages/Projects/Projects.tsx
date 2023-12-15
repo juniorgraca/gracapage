@@ -14,7 +14,7 @@ import {
   PnavContent,
   ImgView,
   TitleProjectArea,
-  TitlePara,
+  TitlePara,Link
 } from "../../components/Projects.style";
 
 export default function Projects() {
@@ -100,11 +100,14 @@ export default function Projects() {
         </TitleNav>
         <ContentNav imgeUrl={item.img}>
           <TitleProjectArea style={stylesArray[index]}  >
+          <Link href={item.link} target="_blank" rel="noopener noreferrer">
             <ImgView  key={index}
               alt="Click para abrir"
               src="project-icons/content--img/view.png"
             />
+            </Link>
             <TitlePara>{item.desc}</TitlePara>
+            
           </TitleProjectArea>
         </ContentNav>
       </TitleandImg>

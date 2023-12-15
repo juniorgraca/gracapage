@@ -102,6 +102,9 @@ export const TitleProjectArea = styled.div`
 
 
 `;
+export const Link = styled.a`
+
+`
 export const TitlePara = styled.p`
   color: #f9c202;
   font-family: MonaSans;
