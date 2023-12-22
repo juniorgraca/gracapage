@@ -29,7 +29,7 @@ function InititalBanners() {
   };
 
   const pxFull = 100;
-  const pxMiddle = 7;
+  const pxMiddle = 10;
 
   const stylesArray = [
     witdh1

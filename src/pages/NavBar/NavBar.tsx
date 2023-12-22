@@ -7,6 +7,7 @@ import {
   NavBarArea,
 } from "../../components/NavBar.style";
 import { useState, useEffect } from "react";
+import { device } from "./Breakpoint";
 
 function NavBar() {
   const [navbar, setNavbar] = useState<boolean>(false);
@@ -30,13 +31,15 @@ function NavBar() {
     position: 'fixed' | 'relative'; 
     backgroundColor: string;
     backdropFilter: string;
-
+ 
   }
 
   const stylesArray:NavBarContentStyles = {
     position: navbar ? "fixed" : "relative",
     backgroundColor: navbar ? "#rgba( 255, 255, 255, 0.35 )" : "",
     backdropFilter: "blur( 23.5px )",
+    
+  
   };
 
   return (

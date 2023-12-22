@@ -1,11 +1,37 @@
 import styled from "styled-components";
+import { device } from "./Breakpoint";
 
 interface props {
   imageUrl: string;
 }
 
 export const StyledNavContent = styled.nav`
- padding-top:70px;
+
+ @media ${device.mobile}{
+  padding-top:30px;
+}
+
+
+
+@media ${device.mobileSmall}{
+  padding-top:30px;
+}
+
+@media ${device.tablets}{
+  padding-top:30px;
+}
+@media ${device.tabletsSmall}{
+  padding-top:30px;
+}
+@media ${device.desktop}{
+ 
+  padding-top:70px;
+}
+
+@media ${device.desktopSmall}{
+  padding-top:70px;
+}
+
 `;
 
 
@@ -45,7 +71,56 @@ export const StyledBtnP = styled.p`
 `;
 
 export const StyledCarrosel = styled.div<props>`
+@media ${device.mobile}{
+  height: 300px;
+  background-image: url("${(props) => props.imageUrl}");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  transition: 0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  cursor: pointer;
+  align-items: start;
+  display: flex;
+}
 
+
+
+@media ${device.mobileSmall}{
+  height: 350px;
+  background-image: url("${(props) => props.imageUrl}");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  transition: 0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  cursor: pointer;
+  align-items: start;
+  display: flex;
+}
+
+@media ${device.tablets}{
+  height: 450px;
+  background-image: url("${(props) => props.imageUrl}");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  transition: 0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  cursor: pointer;
+  align-items: start;
+  display: flex;
+}
+@media ${device.tabletsSmall}{
+  height: 550px;
+  background-image: url("${(props) => props.imageUrl}");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  transition: 0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  cursor: pointer;
+  align-items: start;
+  display: flex;
+}
+@media ${device.desktop}{
+ 
   height: 650px;
   background-image: url("${(props) => props.imageUrl}");
   background-repeat: no-repeat;
@@ -55,20 +130,38 @@ export const StyledCarrosel = styled.div<props>`
   cursor: pointer;
   align-items: start;
   display: flex;
+}
+
+@media ${device.desktopSmall}{
+  height: 650px;
+  background-image: url("${(props) => props.imageUrl}");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  transition: 0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  cursor: pointer;
+  align-items: start;
+  display: flex;
+}
+
+
 `;
 
 export const StyledTextBanner = styled.div`
   width: 100%;
+
   height: fit-content;
   display: flex;
   justify-content: center;
 `;
 export const StyledIcon = styled.img`
+
   margin-top: 15px;
   display: flex;
   justify-content: space-evenly;
 `;
 export const StyledIconText = styled.div`
+
   display: grid;
   justify-items: center;
   grid-template-columns: 1fr;
