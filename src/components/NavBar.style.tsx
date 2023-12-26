@@ -88,9 +88,6 @@ export const LogoImg = styled.img`
   display: flex;
   width:500px;
 }
-
-
- 
 `;
 
 export const LogoArea = styled.div`

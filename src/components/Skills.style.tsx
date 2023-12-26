@@ -10,29 +10,29 @@ export const StyledSkillNav = styled.nav`
 
 export const StyledSkillContent = styled.div`
 @media ${device.mobile}{
-  padding: 0px 10px;
+  padding: 0px 15px;
   display: flex;
   margin: 0 auto;
 }
 
 @media ${device.mobileSmall}{
-  padding: 0px 10px;
+  padding: 0px 15px;
   display: flex;
   margin: 0 auto;
 }
 
 @media ${device.tablets}{
-  padding: 0px 10px;
+  padding: 0px 15px;
   display: flex;
   margin: 0 auto;
 }
 @media ${device.tabletsSmall}{
-  padding: 0px 10px;
+  padding: 0px 15px;
   display: flex;
   margin: 0 auto;
 }
 @media ${device.desktop}{
-  padding: 0px 10px;
+  padding: 0px 15px;
   display: flex;
   margin: 0 auto;
 
@@ -49,6 +49,7 @@ export const StyledSkillContent = styled.div`
 export const StyledSkillTitle = styled.h2`
  
   @media ${device.mobile}{
+ 
     overflow: hidden;
   color: #e6e6e6;
   text-overflow: ellipsis;
@@ -60,6 +61,7 @@ export const StyledSkillTitle = styled.h2`
 }
 
 @media ${device.mobileSmall}{
+
   overflow: hidden;
   color: #e6e6e6;
   text-overflow: ellipsis;
@@ -71,6 +73,7 @@ export const StyledSkillTitle = styled.h2`
 }
 
 @media ${device.tablets}{
+
   overflow: hidden;
   color: #e6e6e6;
   text-overflow: ellipsis;
@@ -81,6 +84,7 @@ export const StyledSkillTitle = styled.h2`
   line-height: normal;
 }
 @media ${device.tabletsSmall}{
+
   overflow: hidden;
   color: #e6e6e6;
   text-overflow: ellipsis;
@@ -91,6 +95,7 @@ export const StyledSkillTitle = styled.h2`
   line-height: normal;
 }
 @media ${device.desktop}{
+  
   overflow: hidden;
   color: #e6e6e6;
   text-overflow: ellipsis;
@@ -182,6 +187,7 @@ export const StyledSkillDot = styled.p`
 
 export const StyledContainSec = styled.section`
 @media ${device.mobile}{
+  margin: 0px 5px;
   padding: 10px 5px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr ;
@@ -195,18 +201,21 @@ export const StyledContainSec = styled.section`
 }
 
 @media ${device.mobileSmall}{
-  padding: 10px 10px;
+  margin: 0px 10px;
+  padding: 10px 5px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr ;
+  grid-template-rows: 1fr 1fr ;
   grid-template-areas:
-    ". . . ."
-    ". . . ."
-    ". . . .";
+    ". . ."
+    ". . ."
+    ". . . "
+    ". . . ";
   gap:5px;
 }
 
 @media ${device.tablets}{
+  margin: 0px 5px;
   padding: 10px 10px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -218,6 +227,7 @@ export const StyledContainSec = styled.section`
   gap: 12px;
 }
 @media ${device.tabletsSmall}{
+  margin: 0px 5px;
   padding: 10px 10px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -229,6 +239,7 @@ export const StyledContainSec = styled.section`
   gap: 15px;
 }
 @media ${device.desktop}{
+  margin: 0px 5px;
   padding: 10px 10px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -241,6 +252,7 @@ export const StyledContainSec = styled.section`
 }
 
 @media ${device.desktopSmall}{
+  margin: 0px 10px;
   padding: 10px 10px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
@@ -321,8 +333,8 @@ export const StyledIconsSkillContain = styled.div`
 }
 
 @media ${device.mobileSmall}{
-  width: 55px;
-  height: 60px;
+  width: 45px;
+  height: 50px;
   border-radius: 0.3125rem;
   border: 1px solid #f9c20233;
   background: #15161f;
@@ -482,7 +494,6 @@ export const StyledContenPSkills = styled.p`
 
 @media ${device.mobileSmall}{
   margin-top: 10px;
-  width:240px;
   color: #e6e6e6;
   font-family: MonaSans;
   font-size: 0.90rem;
@@ -501,7 +512,7 @@ export const StyledContenPSkills = styled.p`
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  width:240px;
+  
 }
 @media ${device.tabletsSmall}{
   font-size: 1rem;
@@ -520,7 +531,7 @@ export const StyledContenPSkills = styled.p`
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  width:240px;
+
 }
 
 @media ${device.desktopSmall}{
@@ -531,18 +542,72 @@ export const StyledContenPSkills = styled.p`
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  width:240px;
+
 }
  
 `;
 
 export const StyledContentTitle = styled.h2`
+@media ${device.mobile}{
   overflow: hidden;
   color: #f9c202;
   font-family: MonaSans;
-  font-size: 15px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  width:240px;
+}
+
+
+
+@media ${device.mobileSmall}{
+  overflow: hidden;
+  color: #f9c202;
+  font-family: MonaSans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+@media ${device.tablets}{
+  overflow: hidden;
+  color: #f9c202;
+  font-family: MonaSans;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+@media ${device.tabletsSmall}{
+  overflow: hidden;
+  color: #f9c202;
+  font-family: MonaSans;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+@media ${device.desktop}{
+  overflow: hidden;
+  color: #f9c202;
+  font-family: MonaSans;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+}
+
+@media ${device.desktopSmall}{
+  overflow: hidden;
+  color: #f9c202;
+  font-family: MonaSans;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+ 
+
 `;
