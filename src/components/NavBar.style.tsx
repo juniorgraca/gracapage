@@ -2,8 +2,7 @@ import styled from "styled-components";
 import { device } from "./Breakpoint";
 
 export const NavBarContent = styled.div`
- 
-  @media ${device.mobile}{
+ @media ${device.mobile}{
   width: 100%;
   height: 65px;
   display: flex;

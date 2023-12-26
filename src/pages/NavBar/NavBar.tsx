@@ -7,7 +7,7 @@ import {
   NavBarArea,
 } from "../../components/NavBar.style";
 import { useState, useEffect } from "react";
-import { device } from "./Breakpoint";
+
 
 function NavBar() {
   const [navbar, setNavbar] = useState<boolean>(false);
