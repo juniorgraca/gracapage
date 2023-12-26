@@ -5,7 +5,6 @@ const size = {
   tabletsSmall: '992px',
   desktop: '1200px',
   desktopSmall: '1920px',
-  
 };
 
 export const device = {

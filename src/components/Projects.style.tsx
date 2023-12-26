@@ -15,6 +15,7 @@ export const StyledProjectImg = styled.img`
   height: 20px;
   margin-left: 10px;
 `;
+
 export const StyledSkillTitle = styled.h2`
   overflow: hidden;
   color: #e6e6e6;
