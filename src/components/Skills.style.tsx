@@ -184,13 +184,14 @@ export const StyledContainSec = styled.section`
 @media ${device.mobile}{
   padding: 10px 10px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr ;
+  grid-template-rows: 1fr 1fr ;
   grid-template-areas:
-    ". . . ."
-    ". . . ."
-    ". . . .";
-  gap: 10px;
+    ". . ."
+    ". . ."
+    ". . . "
+    ". . . ";
+  gap:5px;
 }
 
 @media ${device.mobileSmall}{
@@ -302,8 +303,8 @@ const breatheAnimation = keyframes`
 
 export const StyledIconsSkillContain = styled.div`
 @media ${device.mobile}{
-  width: 45px;
-  height: 50px;
+  width: 35px;
+  height: 30px;
   border-radius: 0.3125rem;
   border: 1px solid #f9c20233;
   background: #15161f;
@@ -410,7 +411,7 @@ export const StyledIconsSkillContain = styled.div`
 `;
 export const StyledIconsSkill = styled.img`
 @media ${device.mobile}{
- width:40%;
+ width:30%;
  height:auto;
 }
 
@@ -439,8 +440,8 @@ export const StyledIconsSkill = styled.img`
 export const StyledContentText = styled.div`
 
   @media ${device.mobile}{
-    padding:0px 20px;
-    text-align:justify;
+    padding:0px 5px;
+    
 }
 
 @media ${device.mobileSmall}{
@@ -476,6 +477,7 @@ export const StyledContenPSkills = styled.p`
   font-weight: 400;
   line-height: normal;
   width:100%
+
 }
 
 @media ${device.mobileSmall}{
