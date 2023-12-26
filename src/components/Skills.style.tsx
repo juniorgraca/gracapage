@@ -4,8 +4,8 @@ import { device } from "./Breakpoint";
 
 export const StyledSkillNav = styled.nav`
   background-color: #191b28;
-  padding-bottom:96px;
-  padding-top:96px;
+  padding-bottom:56px;
+  padding-top:56px;
 `;
 
 export const StyledSkillContent = styled.div`
@@ -182,7 +182,7 @@ export const StyledSkillDot = styled.p`
 
 export const StyledContainSec = styled.section`
 @media ${device.mobile}{
-  padding: 10px 10px;
+  padding: 10px 5px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr ;
   grid-template-rows: 1fr 1fr ;
@@ -440,25 +440,25 @@ export const StyledIconsSkill = styled.img`
 export const StyledContentText = styled.div`
 
   @media ${device.mobile}{
-    padding:0px 5px;
+    padding:8px 5px;
     
 }
 
 @media ${device.mobileSmall}{
-   padding:0px 20px;
+
     text-align:justify;
 }
 
 @media ${device.tablets}{
-  padding:0px 20px;
+
     text-align:justify;
 }
 @media ${device.tabletsSmall}{
-  padding:0px 20px;
+
     text-align:justify;
 }
 @media ${device.desktop}{
-  padding:0px 20px;
+ 
     text-align:justify;
 }
 
@@ -540,7 +540,7 @@ export const StyledContentTitle = styled.h2`
   overflow: hidden;
   color: #f9c202;
   font-family: MonaSans;
-  font-size: 22px;
+  font-size: 15px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;

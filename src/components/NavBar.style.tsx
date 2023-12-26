@@ -59,7 +59,8 @@ export const LogoImg = styled.img`
   display: flex;
   width:100px;
   height:50px;
-  margin-left:0px
+  padding-top:10px;
+  margin-left:0px;
 }
 
 @media ${device.mobileSmall}{

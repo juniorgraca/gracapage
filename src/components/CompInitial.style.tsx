@@ -6,7 +6,7 @@ export const StyledContainerInit = styled.section`
   margin-top: 30px;
   width: 100%;
   max-width:480px;
-  height: 448px;
+
   z-index: -1;
   background-image: url("union.png");
   background-color:blue;
@@ -169,13 +169,13 @@ export const StyledPictureContain = styled.div`
 
 export const StyledPicture = styled.img`
 @media ${device.mobile}{
-  padding-top: 30px;
+  padding-top:20px;
   width:20%;
 
 }
 @media ${device.tabletsSmall}{
   width:100%;
-  margin-bottom: -1px;
+
 }
 @media ${device.desktop}{
 
@@ -188,8 +188,8 @@ export const StyledPicture = styled.img`
 
 export const StyledTextArea = styled.div`
 @media ${device.mobile}{
+  margin-top:-1px;
   background-color:#191b28;
-  margin-top:-3px;
 }
 
 @media ${device.tabletsSmall}{
@@ -319,12 +319,12 @@ export const StyledTextDesc = styled.h3`
 
 export const StyledIconSocial = styled.img`
 @media ${device.mobile}{
-  width: 50%;
+  width: 65%;
   height: auto;
 }
 
 @media ${device.tabletsSmall}{
-  width: 45%;
+  width: 65%;
   height: auto;
 }
 @media ${device.desktop}{
@@ -342,8 +342,8 @@ export const StyledIconSocialContain = styled.div`
   border-radius: 5px;
   border: 1px solid #f9c202;
   background: #191b28;
-  width: 50px;
-  height: 50px;
+  width: 42px;
+  height: 41px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -358,7 +358,7 @@ export const StyledIconSocialContain = styled.div`
   border: 1px solid #f9c202;
   background: #191b28;
   width: 62px;
-  height: 50px;
+  height: 51px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -388,7 +388,7 @@ export const StyledIconSocialContain = styled.div`
 `;
 export const StyledIconArea = styled.div`
 @media ${device.mobile}{
-  margin-top: 21px;
+  margin-top: 23px;
   display: flex;
   gap: 14px;
   justify-content: center;
