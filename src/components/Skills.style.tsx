@@ -3,6 +3,7 @@ import { keyframes } from "styled-components";
 import { device } from "./Breakpoint";
 
 export const StyledSkillNav = styled.nav`
+  margin: 0 auto;
   background-color: #191b28;
   padding-bottom:56px;
   padding-top:56px;
@@ -27,11 +28,13 @@ export const StyledSkillContent = styled.div`
   margin: 0 auto;
 }
 @media ${device.tabletsSmall}{
+ 
   padding: 0px 15px;
   display: flex;
   margin: 0 auto;
 }
 @media ${device.desktop}{
+  width: 1200px;
   padding: 0px 15px;
   display: flex;
   margin: 0 auto;
@@ -39,7 +42,7 @@ export const StyledSkillContent = styled.div`
 }
 
 @media ${device.desktopSmall}{
-  width: 100%;
+  width: 1440px;
   display: flex;
   margin: 0 auto;
 }
@@ -49,7 +52,6 @@ export const StyledSkillContent = styled.div`
 export const StyledSkillTitle = styled.h2`
  
   @media ${device.mobile}{
- 
     overflow: hidden;
   color: #e6e6e6;
   text-overflow: ellipsis;
@@ -204,13 +206,12 @@ export const StyledContainSec = styled.section`
   margin: 0px 10px;
   padding: 10px 5px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr ;
-  grid-template-rows: 1fr 1fr ;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
   grid-template-areas:
-    ". . ."
-    ". . ."
-    ". . . "
-    ". . . ";
+    ". . . ."
+    ". . . ."
+    ". . . .";
   gap:5px;
 }
 
@@ -266,7 +267,7 @@ export const StyledContainSec = styled.section`
 `;
 export const StyledIconNav = styled.div`
  @media ${device.mobile}{
-  width: 100%;
+  width: auto;
   display: flex;
   margin: 0 auto;
 }
@@ -274,26 +275,26 @@ export const StyledIconNav = styled.div`
 
 
 @media ${device.mobileSmall}{
-  width: 100%;
+  width: auto;
   display: flex;
   margin: 0 auto;
 }
 
 @media ${device.tablets}{
-  width: 100%;
+  width: auto;
   display: flex;
   margin: 0 auto;
 }
 @media ${device.tabletsSmall}{
-  width: 100%;
+  width: auto;
   display: flex;
   margin: 0 auto;
 }
 @media ${device.desktop}{
-  width: 100%;
+  width:1200px;
   display: flex;
   margin: 0 auto;
-
+  
 }
 
 @media ${device.desktopSmall}{
@@ -315,8 +316,8 @@ const breatheAnimation = keyframes`
 
 export const StyledIconsSkillContain = styled.div`
 @media ${device.mobile}{
-  width: 35px;
-  height: 30px;
+  width: 45px;
+  height: 40px;
   border-radius: 0.3125rem;
   border: 1px solid #f9c20233;
   background: #15161f;
@@ -333,8 +334,8 @@ export const StyledIconsSkillContain = styled.div`
 }
 
 @media ${device.mobileSmall}{
-  width: 45px;
-  height: 50px;
+  width: 50px;
+  height: 55px;
   border-radius: 0.3125rem;
   border: 1px solid #f9c20233;
   background: #15161f;
@@ -351,8 +352,8 @@ export const StyledIconsSkillContain = styled.div`
 }
 
 @media ${device.tablets}{
-  width: 55px;
-  height: 60px;
+  width: 75px;
+  height: 80px;
   border-radius: 0.3125rem;
   border: 1px solid #f9c20233;
   background: #15161f;
@@ -368,8 +369,8 @@ export const StyledIconsSkillContain = styled.div`
   }
 }
 @media ${device.tabletsSmall}{
-  width: 130px;
-  height: 150px;
+  width: 90px;
+  height: 90px;
   border-radius: 0.3125rem;
   border: 1px solid #f9c20233;
   background: #15161f;
@@ -385,8 +386,8 @@ export const StyledIconsSkillContain = styled.div`
   }
 }
 @media ${device.desktop}{
-  width: 130px;
-  height: 150px;
+  width: 110px;
+  height: 120px;
   border-radius: 0.3125rem;
   border: 1px solid #f9c20233;
   background: #15161f;
@@ -457,25 +458,27 @@ export const StyledContentText = styled.div`
 }
 
 @media ${device.mobileSmall}{
+  margin: 0px 10px;
 
     text-align:justify;
 }
 
 @media ${device.tablets}{
-
+    margin: 0px 10px;
     text-align:justify;
 }
 @media ${device.tabletsSmall}{
-
+    margin: 0px 10px;
     text-align:justify;
 }
 @media ${device.desktop}{
- 
+    margin: 0px 10px;
     text-align:justify;
 }
 
 @media ${device.desktopSmall}{
-
+    margin: 0px 10px;
+    text-align:justify;
 }
 `;
 
@@ -552,7 +555,7 @@ export const StyledContentTitle = styled.h2`
   overflow: hidden;
   color: #f9c202;
   font-family: MonaSans;
-  font-size: 16px;
+  font-size: 13px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -564,7 +567,7 @@ export const StyledContentTitle = styled.h2`
   overflow: hidden;
   color: #f9c202;
   font-family: MonaSans;
-  font-size: 20px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -574,7 +577,7 @@ export const StyledContentTitle = styled.h2`
   overflow: hidden;
   color: #f9c202;
   font-family: MonaSans;
-  font-size: 24px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -583,7 +586,7 @@ export const StyledContentTitle = styled.h2`
   overflow: hidden;
   color: #f9c202;
   font-family: MonaSans;
-  font-size: 26px;
+  font-size: 22px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -592,7 +595,7 @@ export const StyledContentTitle = styled.h2`
   overflow: hidden;
   color: #f9c202;
   font-family: MonaSans;
-  font-size: 30px;
+  font-size: 26px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;

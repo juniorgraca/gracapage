@@ -1,9 +1,11 @@
 import InitialNav from "./pages/InitialNav/InitialNav";
-import NavBar from "./pages/NavBar/NavBar";
+
 import InititalBanners from "./pages/InitialBanners/InititalBanners";
 import InitialSkills from "./pages/InitialSkills/InitialSkills";
+import NavBar from "./pages/NavBar/NavBar";
+
 // import Footer from "./pages/Footer/Footer";
-// import Projects from "./pages/Projects/Projects";
+import Projects from "./pages/Projects/Projects";
 
 
 function App() {
@@ -11,11 +13,11 @@ function App() {
     <div>
       <div>
         <>
-          <NavBar></NavBar>
+             <NavBar></NavBar>
            <InititalBanners></InititalBanners> 
           <InitialNav></InitialNav>
           <InitialSkills></InitialSkills>
-           {/* <Projects></Projects> */}
+    <Projects></Projects>
           {/* <Footer></Footer>   */}
         </>
       </div>

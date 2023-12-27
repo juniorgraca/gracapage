@@ -47,11 +47,56 @@ export const NavBarContent = styled.div`
 `;
 
 export const NavBarArea = styled.div`
+@media ${device.mobile}{
+  display: flex;
+  width: 380px;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+
+
+
+@media ${device.mobileSmall}{
+  display: flex;
+  width: 480px;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+
+@media ${device.tablets}{
+  display: flex;
+  width: 768px;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+@media ${device.tabletsSmall}{
+  display: flex;
+  width: 992px;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+@media ${device.desktop}{
+  display: flex;
+  width: 1200px;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0 auto;
+
+}
+
+@media ${device.desktopSmall}{
   display: flex;
   width: 1440px;
   align-items: center;
   justify-content: space-around;
   margin: 0 auto;
+
+}
+ 
 `;
 
 export const LogoImg = styled.img`
@@ -91,7 +136,6 @@ export const LogoImg = styled.img`
 `;
 
 export const LogoArea = styled.div`
-
   display: flex;
   width: 33%;
   align-items: center;

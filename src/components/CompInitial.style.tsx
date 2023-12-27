@@ -162,7 +162,6 @@ export const StyledPictureContain = styled.div`
 @media ${device.desktopSmall}{
   display: flex;
   align-items: end;
-
 }
   
 `;
@@ -171,18 +170,16 @@ export const StyledPicture = styled.img`
 @media ${device.mobile}{
   padding-top:20px;
   width:20%;
-
 }
 @media ${device.tabletsSmall}{
-  width:100%;
-
+  width:80%;
 }
 @media ${device.desktop}{
-
+  width:90%;
 }
 
 @media ${device.desktopSmall}{
-
+  width:100%;
 }
 `;
 
@@ -195,7 +192,6 @@ export const StyledTextArea = styled.div`
 @media ${device.tabletsSmall}{
   margin-left: 30px;
   width: 65%;
-
   background-color:transparent;
 }
 @media ${device.desktop}{
@@ -326,14 +322,17 @@ export const StyledIconSocial = styled.img`
 @media ${device.tabletsSmall}{
   width: 65%;
   height: auto;
+
 }
 @media ${device.desktop}{
   width: auto;
   height: auto;
+
 }
 @media ${device.desktopSmall}{
   width: auto;
   height: auto;
+
 }`;
 
 export const StyledIconSocialContain = styled.div`
