@@ -60,7 +60,6 @@ export const StyledContainerInit = styled.section`
   background-image: url("union.png");
 }
 
- 
 `;
 
 
@@ -124,9 +123,9 @@ export const StyledSection = styled.div`
     content: "";
     background-color: #252738;
     height: 255px;
-    width: 300px;
+    width: 220px;
     z-index: 1;
-    right: 40px;
+    right: 20px;
     position: absolute;
     display: flex;
     -webkit-border-bottom-right-radius: 50px;
@@ -304,7 +303,7 @@ export const StyledTextDesc = styled.h3`
   margin-top: 0px;
   color: #e6e6e6;
   font-family: Archivo;
-  font-size: 1rem;
+  font-size: 1.3rem;
   font-style: normal;
   font-weight: 400;
   line-height: 2.1875rem;

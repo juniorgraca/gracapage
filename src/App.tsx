@@ -3,8 +3,7 @@ import InitialNav from "./pages/InitialNav/InitialNav";
 import InititalBanners from "./pages/InitialBanners/InititalBanners";
 import InitialSkills from "./pages/InitialSkills/InitialSkills";
 import NavBar from "./pages/NavBar/NavBar";
-
-// import Footer from "./pages/Footer/Footer";
+import Footer from "./pages/Footer/Footer";
 import Projects from "./pages/Projects/Projects";
 
 
@@ -18,7 +17,7 @@ function App() {
           <InitialNav></InitialNav>
           <InitialSkills></InitialSkills>
     <Projects></Projects>
-          {/* <Footer></Footer>   */}
+          <Footer></Footer> 
         </>
       </div>
     </div>

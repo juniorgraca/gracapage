@@ -100,7 +100,7 @@ export const StyledSkillTitle = styled.h2`
   color: #e6e6e6;
   text-overflow: ellipsis;
   font-family: MonaSans;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -112,7 +112,7 @@ export const StyledSkillTitle = styled.h2`
   color: #e6e6e6;
   text-overflow: ellipsis;
   font-family: MonaSans;
-  font-size: 1.3rem;
+  font-size: 1.7rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -123,7 +123,7 @@ export const StyledSkillTitle = styled.h2`
   color: #e6e6e6;
   text-overflow: ellipsis;
   font-family: MonaSans;
-  font-size: 1.3rem;
+  font-size: 1.7rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -134,7 +134,7 @@ export const StyledSkillTitle = styled.h2`
   color: #e6e6e6;
   text-overflow: ellipsis;
   font-family: MonaSans;
-  font-size: 1.3rem;
+  font-size: 1.9rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -147,7 +147,7 @@ export const StyledSkillTitle = styled.h2`
   color: #e6e6e6;
   text-overflow: ellipsis;
   font-family: MonaSans;
-  font-size: 1.3rem;
+  font-size: 1.9rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -157,14 +157,68 @@ export const StyledSkillTitle = styled.h2`
 `;
 
 export const StyledSkillDot = styled.p`
-  overflow: hidden;
-  color: #f9c202;
+  @media ${device.mobile}{
+    overflow: hidden;
+    color: #f9c202;
   text-overflow: ellipsis;
   font-family: MonaSans;
   font-size: 1.3rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+
+@media ${device.mobileSmall}{
+  overflow: hidden;
+  color: #f9c202;
+  text-overflow: ellipsis;
+  font-family: MonaSans;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+@media ${device.tablets}{
+  overflow: hidden;
+  color: #f9c202;
+  text-overflow: ellipsis;
+  font-family: MonaSans;
+  font-size: 1.7rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+@media ${device.tabletsSmall}{
+  overflow: hidden;
+  color: #f9c202;
+  text-overflow: ellipsis;
+  font-family: MonaSans;
+  font-size: 1.7rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+@media ${device.desktop}{
+  overflow: hidden;
+  color: #f9c202;
+  text-overflow: ellipsis;
+  font-family: MonaSans;
+  font-size: 1.9rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+@media ${device.desktopSmall}{
+  overflow: hidden;
+  color: #f9c202;
+  text-overflow: ellipsis;
+  font-family: MonaSans;
+  font-size: 1.9rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;}
 `;
 
 export const Pnav = styled.section`
@@ -365,7 +419,6 @@ export const TitleNav = styled.div`
   padding: 0px 20px;
 }
 @media ${device.desktop}{
- 
   display: flex;
   width: 100%;
   height: 380px;
@@ -407,7 +460,6 @@ export const ContentNav = styled.div<props>`
   background-image: url("${(props) => props.imgeUrl}");
   width: 100%;
   height: 100%;
- 
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -418,33 +470,42 @@ export const TitleNavContain = styled.div``;
 export const ImgView = styled.img`
  
   @media ${device.mobile}{
+    visibility:hidden;
     display: flex;
-  margin: 0 auto;
-  width: 50%;
+    margin: 0 auto;
+   width: 50%;
 }
 
 
 
 @media ${device.mobileSmall}{
+  visibility:hidden;
   display: flex;
   margin: 0 auto;
 }
 
 @media ${device.tablets}{
+  visibility:hidden;
   display: flex;
   margin: 0 auto;
 }
 @media ${device.tabletsSmall}{
+  visibility:hidden;
   display: flex;
   margin: 0 auto;
 }
 @media ${device.desktop}{
+  visibility:visible;
   display: flex;
   margin: 0 auto;
-
+  width: auto;
+  height:250px;
 }
 
 @media ${device.desktopSmall}{
+  visibility:visible;
+  display: flex;
+  margin: 0 auto;
 
 }
 
@@ -453,10 +514,8 @@ export const ImgView = styled.img`
 export const TitleNavIconContain = styled.div`
 `
 export const TitleProjectArea = styled.div`
-
   color: #f9c202;
   text-shadow: 1px 2px 0px rgba(0, 0, 0, 0.658);
-
   width: 100%;
   height: 100%;
   cursor: pointer;&:hover{
@@ -473,50 +532,31 @@ export const Link = styled.a`
 export const TitlePara = styled.p`
 
   @media ${device.mobile}{
-    color: #f9c202;
-  font-family: MonaSans;
-  font-size: 1.3rem;
-  margin-top: -30px;
-  display: flex;
-  justify-content: center;
-  text-shadow: 1px 2px 0px rgba(0, 0, 0, 0.658);
+    visibility:hidden;
+
 }
 
 
 
 @media ${device.mobileSmall}{
-  color: #f9c202;
-  font-family: MonaSans;
-  font-size: 1.3rem;
-  margin-top: -30px;
-  display: flex;
-  justify-content: center;
-  text-shadow: 1px 2px 0px rgba(0, 0, 0, 0.658);
+  visibility:hidden;
+  margin-top: -130px
 }
 
 @media ${device.tablets}{
-  color: #f9c202;
-  font-family: MonaSans;
-  font-size: 1.3rem;
-  margin-top: -30px;
-  display: flex;
-  justify-content: center;
-  text-shadow: 1px 2px 0px rgba(0, 0, 0, 0.658);
+  visibility:hidden;
+  margin-top: -130px
 }
 @media ${device.tabletsSmall}{
-  color: #f9c202;
-  font-family: MonaSans;
-  font-size: 1.3rem;
-  margin-top: -30px;
-  display: flex;
-  justify-content: center;
-  text-shadow: 1px 2px 0px rgba(0, 0, 0, 0.658);
+  visibility:hidden;
+  margin-top: -130px
 }
 @media ${device.desktop}{
+  visibility:visible;
   color: #f9c202;
   font-family: MonaSans;
   font-size: 1.3rem;
-  margin-top: -30px;
+  margin-top: 20px;
   display: flex;
   justify-content: center;
   text-shadow: 1px 2px 0px rgba(0, 0, 0, 0.658);
@@ -524,12 +564,13 @@ export const TitlePara = styled.p`
 }
 
 @media ${device.desktopSmall}{
+  visibility:visible;
   color: #f9c202;
   font-family: MonaSans;
   font-size: 1.7rem;
   display: flex;
   justify-content: center;
-  margin-top: -30px;
+  margin-top: -20px;
   text-shadow: 1px 2px 0px rgba(0, 0, 0, 0.658);
 }
 

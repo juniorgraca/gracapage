@@ -11,6 +11,7 @@ export const StyledSkillNav = styled.nav`
 
 export const StyledSkillContent = styled.div`
 @media ${device.mobile}{
+  
   padding: 0px 15px;
   display: flex;
   margin: 0 auto;
