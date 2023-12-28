@@ -10,37 +10,37 @@ export const PnavContent = styled.div`
 @media ${device.mobile}{
   display: flex;
 
-  margin: 96px auto 3px;
+  margin: 20px auto 15px;
 }
 
 
 
 @media ${device.mobileSmall}{
   display: flex;
-
-  margin: 96px auto 3px;
+  margin: 20px auto 15px;
 }
 
 @media ${device.tablets}{
   display: flex;
-  margin: 96px auto 3px;
+  margin: 20px auto 3px;
 }
+
 @media ${device.tabletsSmall}{
   display: flex;
   width: 992px;
-  margin: 96px auto 3px;
+  margin: 20px auto 15px;
 }
 @media ${device.desktop}{
   display: flex;
   width: 1200px;
-  margin: 96px auto 3px;
+  margin: 20px auto 15px;
 
 }
 
 @media ${device.desktopSmall}{
   display: flex;
   width: 1440px;
-  margin: 96px auto 3px;
+  margin: 20px auto 15px;
 }
 
 `;
@@ -81,6 +81,7 @@ export const StyledProjectImg = styled.img`
 `;
 
 export const StyledSkillTitle = styled.h2`
+@media ${device.mobile}{
   overflow: hidden;
   color: #e6e6e6;
   text-overflow: ellipsis;
@@ -90,6 +91,69 @@ export const StyledSkillTitle = styled.h2`
   font-weight: 400;
   line-height: normal;
   padding-left:15px;
+}
+
+
+
+@media ${device.mobileSmall}{
+  overflow: hidden;
+  color: #e6e6e6;
+  text-overflow: ellipsis;
+  font-family: MonaSans;
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-left:15px;
+}
+
+@media ${device.tablets}{
+  overflow: hidden;
+  color: #e6e6e6;
+  text-overflow: ellipsis;
+  font-family: MonaSans;
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-left:25px;
+}
+@media ${device.tabletsSmall}{
+  overflow: hidden;
+  color: #e6e6e6;
+  text-overflow: ellipsis;
+  font-family: MonaSans;
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-left:15px;
+}
+@media ${device.desktop}{
+  overflow: hidden;
+  color: #e6e6e6;
+  text-overflow: ellipsis;
+  font-family: MonaSans;
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-left:25px;
+
+}
+
+@media ${device.desktopSmall}{
+  overflow: hidden;
+  color: #e6e6e6;
+  text-overflow: ellipsis;
+  font-family: MonaSans;
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-left:15px;
+}
+ 
 `;
 
 export const StyledSkillDot = styled.p`
@@ -110,6 +174,8 @@ export const Pnav = styled.section`
   display: flex;
   flex-wrap: wrap;
  gap:1.9px;
+ padding-left:15px;
+ padding-right:15px;
 }
 
 
@@ -120,6 +186,7 @@ export const Pnav = styled.section`
   display: flex;
   flex-wrap: wrap;
   gap: 7px;
+ 
 }
 
 @media ${device.tablets}{
@@ -141,7 +208,7 @@ export const Pnav = styled.section`
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
-  gap: 7px;
+  gap: 5px;
 
 }
 
@@ -206,7 +273,7 @@ export const TitleandImg = styled.div`
   height: 385px;
   width: 33%;
   &.container4 {
-    margin-top: 70px;
+  
     width: 100%;
     height: 400px;
   }
@@ -217,7 +284,7 @@ export const TitleandImg = styled.div`
   height: 385px;
   width: 33%;
   &.container4 {
-    margin-top: 70px;
+   
     width: 100%;
     height: 400px;
   }
@@ -340,6 +407,7 @@ export const ContentNav = styled.div<props>`
   background-image: url("${(props) => props.imgeUrl}");
   width: 100%;
   height: 100%;
+ 
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -348,19 +416,52 @@ export const ContentNav = styled.div<props>`
 
 export const TitleNavContain = styled.div``;
 export const ImgView = styled.img`
+ 
+  @media ${device.mobile}{
+    display: flex;
+  margin: 0 auto;
+  width: 50%;
+}
+
+
+
+@media ${device.mobileSmall}{
   display: flex;
   margin: 0 auto;
+}
+
+@media ${device.tablets}{
+  display: flex;
+  margin: 0 auto;
+}
+@media ${device.tabletsSmall}{
+  display: flex;
+  margin: 0 auto;
+}
+@media ${device.desktop}{
+  display: flex;
+  margin: 0 auto;
+
+}
+
+@media ${device.desktopSmall}{
+
+}
+
 
 `;
 export const TitleNavIconContain = styled.div`
 `
 export const TitleProjectArea = styled.div`
+
   color: #f9c202;
   text-shadow: 1px 2px 0px rgba(0, 0, 0, 0.658);
+
   width: 100%;
   height: 100%;
   cursor: pointer;&:hover{
     backdrop-filter: blur(23.5px);
+    font-size: 3px;
 
   }
 
@@ -370,10 +471,66 @@ export const Link = styled.a`
 
 `
 export const TitlePara = styled.p`
+
+  @media ${device.mobile}{
+    color: #f9c202;
+  font-family: MonaSans;
+  font-size: 1.3rem;
+  margin-top: -30px;
+  display: flex;
+  justify-content: center;
+  text-shadow: 1px 2px 0px rgba(0, 0, 0, 0.658);
+}
+
+
+
+@media ${device.mobileSmall}{
+  color: #f9c202;
+  font-family: MonaSans;
+  font-size: 1.3rem;
+  margin-top: -30px;
+  display: flex;
+  justify-content: center;
+  text-shadow: 1px 2px 0px rgba(0, 0, 0, 0.658);
+}
+
+@media ${device.tablets}{
+  color: #f9c202;
+  font-family: MonaSans;
+  font-size: 1.3rem;
+  margin-top: -30px;
+  display: flex;
+  justify-content: center;
+  text-shadow: 1px 2px 0px rgba(0, 0, 0, 0.658);
+}
+@media ${device.tabletsSmall}{
+  color: #f9c202;
+  font-family: MonaSans;
+  font-size: 1.3rem;
+  margin-top: -30px;
+  display: flex;
+  justify-content: center;
+  text-shadow: 1px 2px 0px rgba(0, 0, 0, 0.658);
+}
+@media ${device.desktop}{
+  color: #f9c202;
+  font-family: MonaSans;
+  font-size: 1.3rem;
+  margin-top: -30px;
+  display: flex;
+  justify-content: center;
+  text-shadow: 1px 2px 0px rgba(0, 0, 0, 0.658);
+
+}
+
+@media ${device.desktopSmall}{
   color: #f9c202;
   font-family: MonaSans;
   font-size: 1.7rem;
   display: flex;
   justify-content: center;
+  margin-top: -30px;
   text-shadow: 1px 2px 0px rgba(0, 0, 0, 0.658);
+}
+
 `;
