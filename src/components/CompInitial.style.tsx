@@ -158,6 +158,7 @@ export const StyledPictureContain = styled.div`
   align-items: end;
   margin: 0 auto;
 }
+
 @media ${device.desktopSmall}{
   display: flex;
   align-items: end;
@@ -172,13 +173,16 @@ export const StyledPicture = styled.img`
 }
 @media ${device.tabletsSmall}{
   width:80%;
+  margin-bottom:-3px;
 }
 @media ${device.desktop}{
-  width:90%;
+  width:93%;
+  margin-bottom:-3px;
 }
 
 @media ${device.desktopSmall}{
   width:100%;
+  margin-bottom:-3px;
 }
 `;
 
@@ -195,12 +199,11 @@ export const StyledTextArea = styled.div`
 }
 @media ${device.desktop}{
   margin-left: 30px;
-  width: 65%;
-
+  width: 72%;
 }
 @media ${device.desktopSmall}{
   margin-left: 30px;
-  width: 65%;
+  width: 75%;
 
 }
 
@@ -264,7 +267,7 @@ export const StyledTextDesc = styled.h3`
   font-weight: 400;
   line-height: 1.3rem;
   text-align:justify;
-  padding: 15px;
+  padding: 10px;
 }
 @media ${device.tablets}{
   color: #e6e6e6;
@@ -274,7 +277,7 @@ export const StyledTextDesc = styled.h3`
   font-weight: 400;
   line-height: 1.4rem;
   text-align:justify;
-  padding: 15px;
+  padding: 10px;
   
 }
 @media ${device.tabletsSmall}{
@@ -314,24 +317,27 @@ export const StyledTextDesc = styled.h3`
 
 export const StyledIconSocial = styled.img`
 @media ${device.mobile}{
-  width: 65%;
-  height: auto;
+  width: 55%;
+  height: min-content;
+}
+@media ${device.mobileSmall}{
+  width: 55%;
+  height: min-content;
 }
 
 @media ${device.tabletsSmall}{
-  width: 65%;
-  height: auto;
+  width: 55%;
+  height: min-content;
 
 }
 @media ${device.desktop}{
-  width: auto;
+  width: 55%;
   height: auto;
 
 }
 @media ${device.desktopSmall}{
-  width: auto;
+  width: 45%;
   height: auto;
-
 }`;
 
 export const StyledIconSocialContain = styled.div`
@@ -340,7 +346,22 @@ export const StyledIconSocialContain = styled.div`
   border-radius: 5px;
   border: 1px solid #f9c202;
   background: #191b28;
-  width: 42px;
+  width: 34px;
+  height: 31px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  &:hover {
+    border: 1px solid #ffe279;
+    background: #34353a;
+  }
+}
+@media ${device.mobileSmall}{
+  border-radius: 5px;
+  border: 1px solid #f9c202;
+  background: #191b28;
+  width: 44px;
   height: 41px;
   display: flex;
   align-items: center;
@@ -351,11 +372,11 @@ export const StyledIconSocialContain = styled.div`
     background: #34353a;
   }
 }
-@media ${device.tabletsSmall}{
+@media ${device.tablets}{
   border-radius: 5px;
   border: 1px solid #f9c202;
   background: #191b28;
-  width: 62px;
+  width: 54px;
   height: 51px;
   display: flex;
   align-items: center;
@@ -367,6 +388,23 @@ export const StyledIconSocialContain = styled.div`
   }
  
 }
+@media ${device.tabletsSmall}{
+  border-radius: 5px;
+  border: 1px solid #f9c202;
+  background: #191b28;
+  width: 54px;
+  height: 53px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  &:hover {
+    border: 1px solid #ffe279;
+    background: #34353a;
+  }
+ 
+}
+
 @media ${device.desktopSmall}{
   border-radius: 5px;
   border: 1px solid #f9c202;

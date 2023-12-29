@@ -65,7 +65,7 @@ export const StyledFooterContent = styled.div`
 @media ${device.desktop}{
   padding: 10px 15px 0px 15px;
   margin: 96px auto 0px;
-  width: 100%;
+  width: 1140px;
   height: 100px;
   display:flex;
   align-items:center;
@@ -74,7 +74,7 @@ export const StyledFooterContent = styled.div`
 
 @media ${device.desktopSmall}{
   margin: 96px auto 0px;
-  width: 100%;
+  width: 1140px;
   height: 100px;
   display:flex;
   align-items:center;
@@ -107,12 +107,12 @@ justify-content:center;
 justify-content:center;
 }
 @media ${device.desktop}{
-  justify-content:center;
+  justify-content:end;
 
 }
 
 @media ${device.desktopSmall}{
-  justify-content:center;
+  justify-content:end;
 }
 
 `;
@@ -247,7 +247,14 @@ display:flex;
 justify-content: center;
 }
 @media ${device.desktop}{
- 
+  color: #D9D9D9;
+font-family: Inter;
+font-size: 0.8rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+display:flex;
+width: 33%;
 
 }
 
@@ -259,6 +266,7 @@ font-style: normal;
 font-weight: 400;
 line-height: normal;
 display:flex;
+width: 33%;
 }
 `
 

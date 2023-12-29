@@ -10,37 +10,37 @@ export const PnavContent = styled.div`
 @media ${device.mobile}{
   display: flex;
 
-  margin: 20px auto 15px;
+  margin: 20px 0px 10px 10px;
 }
 
 
 
 @media ${device.mobileSmall}{
   display: flex;
-  margin: 20px auto 15px;
+  margin: 20px 0px 10px 10px;
 }
 
 @media ${device.tablets}{
   display: flex;
-  margin: 20px auto 3px;
+  margin: 20px 0px 10px 10px;
 }
 
 @media ${device.tabletsSmall}{
   display: flex;
   width: 992px;
-  margin: 20px auto 15px;
+  margin: 20px 0px 10px 10px;
 }
 @media ${device.desktop}{
   display: flex;
   width: 1200px;
-  margin: 20px auto 15px;
+  margin: 20px auto;
 
 }
 
 @media ${device.desktopSmall}{
   display: flex;
   width: 1440px;
-  margin: 20px auto 15px;
+  margin: 20px 0px 10px 10px;
 }
 
 `;
@@ -90,7 +90,7 @@ export const StyledSkillTitle = styled.h2`
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  padding-left:15px;
+  
 }
 
 
@@ -104,7 +104,7 @@ export const StyledSkillTitle = styled.h2`
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  padding-left:15px;
+  
 }
 
 @media ${device.tablets}{
@@ -116,7 +116,7 @@ export const StyledSkillTitle = styled.h2`
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  padding-left:25px;
+ 
 }
 @media ${device.tabletsSmall}{
   overflow: hidden;
@@ -127,7 +127,7 @@ export const StyledSkillTitle = styled.h2`
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  padding-left:15px;
+ 
 }
 @media ${device.desktop}{
   overflow: hidden;
@@ -138,7 +138,7 @@ export const StyledSkillTitle = styled.h2`
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  padding-left:25px;
+  padding-left: 10px;
 
 }
 
@@ -228,8 +228,8 @@ export const Pnav = styled.section`
   display: flex;
   flex-wrap: wrap;
  gap:1.9px;
- padding-left:15px;
- padding-right:15px;
+ padding-left:10px;
+ padding-right:10px;
 }
 
 
@@ -240,7 +240,8 @@ export const Pnav = styled.section`
   display: flex;
   flex-wrap: wrap;
   gap: 7px;
- 
+  padding-left:10px;
+ padding-right:10px;
 }
 
 @media ${device.tablets}{
@@ -255,7 +256,7 @@ export const Pnav = styled.section`
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
-  gap:0px;
+ 
 }
 @media ${device.desktop}{
   width: 1200px;
@@ -263,7 +264,6 @@ export const Pnav = styled.section`
   display: flex;
   flex-wrap: wrap;
   gap: 5px;
-
 }
 
 @media ${device.desktopSmall}{
@@ -271,7 +271,8 @@ export const Pnav = styled.section`
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
-  gap: 7px;
+  padding-left:10px;
+ padding-right:10px;
 }
  
 `;
@@ -280,11 +281,9 @@ export const TitleandImg = styled.div`
 @media ${device.mobile}{
   height: 250px;
   width: 100%;
-
   padding-bottom: 60px;
 
   &.container4 {
-    
     width: 100%;
     height: 250px;
  
@@ -292,15 +291,12 @@ export const TitleandImg = styled.div`
 }
 
 
-
 @media ${device.mobileSmall}{
   height: 250px;
   width: 100%;
- 
   padding-bottom: 60px;
 
   &.container4 {
-    
     width: 100%;
     height: 250px;
  
@@ -310,38 +306,43 @@ export const TitleandImg = styled.div`
 @media ${device.tablets}{
   height: 250px;
   width: 50%;
-  padding: 10px 10px;
   padding-bottom: 60px;
 
   &.container4 {
-
+    padding-left:15px;
     width: 50%;
     height: 250px;
  
-  }
+  }&.container2 {
+  padding-left:15px;
+  width: 50%;
+  height: 250px;
+}
 }
 @media ${device.tabletsSmall}{
-
+  
 }
+
 @media ${device.desktop}{
   height: 385px;
   width: 33%;
+ 
   &.container4 {
-  
+    padding-left:0px;
     width: 100%;
     height: 400px;
-  }
+  }&.container2 {
+    padding-left:0px;
+    height: 385px;
+    width: 33%;
+}
+
 
 }
 
+
 @media ${device.desktopSmall}{
-  height: 385px;
-  width: 33%;
-  &.container4 {
-   
-    width: 100%;
-    height: 400px;
-  }
+
 }
   
 `;
@@ -489,11 +490,13 @@ export const ImgView = styled.img`
   display: flex;
   margin: 0 auto;
 }
+
 @media ${device.tabletsSmall}{
   visibility:hidden;
   display: flex;
   margin: 0 auto;
 }
+
 @media ${device.desktop}{
   visibility:visible;
   display: flex;
@@ -506,9 +509,7 @@ export const ImgView = styled.img`
   visibility:visible;
   display: flex;
   margin: 0 auto;
-
 }
-
 
 `;
 export const TitleNavIconContain = styled.div`
@@ -521,10 +522,7 @@ export const TitleProjectArea = styled.div`
   cursor: pointer;&:hover{
     backdrop-filter: blur(23.5px);
     font-size: 3px;
-
   }
-
-
 `;
 export const Link = styled.a`
 
@@ -535,8 +533,6 @@ export const TitlePara = styled.p`
     visibility:hidden;
 
 }
-
-
 
 @media ${device.mobileSmall}{
   visibility:hidden;
@@ -570,8 +566,8 @@ export const TitlePara = styled.p`
   font-size: 1.7rem;
   display: flex;
   justify-content: center;
-  margin-top: -20px;
+  margin: 0 auto;
+  text-align:center;
   text-shadow: 1px 2px 0px rgba(0, 0, 0, 0.658);
 }
-
 `;

@@ -12,34 +12,32 @@ export const StyledSkillNav = styled.nav`
 export const StyledSkillContent = styled.div`
 @media ${device.mobile}{
   
-  padding: 0px 15px;
+  padding: 0px 10px;
   display: flex;
   margin: 0 auto;
 }
 
 @media ${device.mobileSmall}{
-  padding: 0px 15px;
+  padding: 0px 10px;
   display: flex;
   margin: 0 auto;
 }
 
 @media ${device.tablets}{
-  padding: 0px 15px;
+  padding: 0px 10px;
   display: flex;
   margin: 0 auto;
 }
 @media ${device.tabletsSmall}{
- 
-  padding: 0px 15px;
+  padding: 0px 10px;
   display: flex;
   margin: 0 auto;
 }
 @media ${device.desktop}{
-  width: 1200px;
-  padding: 0px 15px;
+  padding: 0px 10px;
   display: flex;
   margin: 0 auto;
-
+  width:1200px;
 }
 
 @media ${device.desktopSmall}{
@@ -191,7 +189,7 @@ export const StyledSkillDot = styled.p`
 export const StyledContainSec = styled.section`
 @media ${device.mobile}{
   margin: 0px 5px;
-  padding: 10px 5px;
+  padding: 10px 5px 0px 5px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr ;
   grid-template-rows: 1fr 1fr ;
@@ -205,7 +203,7 @@ export const StyledContainSec = styled.section`
 
 @media ${device.mobileSmall}{
   margin: 0px 10px;
-  padding: 10px 5px;
+  padding: 10px 5px 0px px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
@@ -218,7 +216,7 @@ export const StyledContainSec = styled.section`
 
 @media ${device.tablets}{
   margin: 0px 5px;
-  padding: 10px 10px;
+  padding: 10px 5px 0px 5px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
@@ -230,7 +228,7 @@ export const StyledContainSec = styled.section`
 }
 @media ${device.tabletsSmall}{
   margin: 0px 5px;
-  padding: 10px 10px;
+  padding: 10px 5px 0px 5px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
@@ -241,8 +239,8 @@ export const StyledContainSec = styled.section`
   gap: 15px;
 }
 @media ${device.desktop}{
-  margin: 0px 5px;
-  padding: 10px 10px;
+  margin: 0px 10px;
+  padding: 10px 0px 0px 0px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
@@ -255,7 +253,7 @@ export const StyledContainSec = styled.section`
 
 @media ${device.desktopSmall}{
   margin: 0px 10px;
-  padding: 10px 10px;
+  padding: 10px 5px 0px 0px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-areas:

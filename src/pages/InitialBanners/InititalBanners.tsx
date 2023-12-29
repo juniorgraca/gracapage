@@ -35,14 +35,22 @@ function InititalBanners() {
     witdh1
       ? {
           width: `${pxFull}%`,
-          justifyContent: "space-evenly",
           cursor: "default",
           display: "flex",
+          justifyContent: "space-evenly",
+
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "100% auto",
+          transition: "0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955)",
+          alignItems: "start",
+         
         }
       : {
           width: `${pxMiddle}%`,
           justifyContent: "space-evenly",
           filter: "grayscale(96%)",
+
+     
         },
 
     witdh2
@@ -50,6 +58,11 @@ function InititalBanners() {
           width: `${pxFull}%`,
           justifyContent: "space-evenly",
           cursor: "default",
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "100% auto",
+          transition: "0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955)",
+          alignItems: "start",
+          
         }
       : {
           width: `${pxMiddle}%`,
@@ -62,6 +75,10 @@ function InititalBanners() {
           width: `${pxFull}%`,
           justifyContent: "space-evenly",
           cursor: "default",
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "100% auto",
+          transition: "0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955)",
+          alignItems: "start",
         }
       : {
           width: `${pxMiddle}%`,
@@ -74,6 +91,10 @@ function InititalBanners() {
           width: `${pxFull}%`,
           justifyContent: "space-evenly",
           cursor: "default",
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "100% auto",
+          transition: "0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955)",
+          alignItems: "start",
         }
       : {
           width: `${pxMiddle}%`,

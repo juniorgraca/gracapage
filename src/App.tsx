@@ -12,11 +12,11 @@ function App() {
     <div>
       <div>
         <>
-             <NavBar></NavBar>
+            <NavBar></NavBar>
            <InititalBanners></InititalBanners> 
           <InitialNav></InitialNav>
           <InitialSkills></InitialSkills>
-    <Projects></Projects>
+           <Projects></Projects>
           <Footer></Footer> 
         </>
       </div>
