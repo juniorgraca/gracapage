@@ -38,9 +38,8 @@ function InititalBanners() {
           cursor: "default",
           display: "flex",
           justifyContent: "space-evenly",
-
           backgroundRepeat: "no-repeat",
-          backgroundSize: "100% auto",
+          
           transition: "0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955)",
           alignItems: "start",
          
@@ -55,46 +54,50 @@ function InititalBanners() {
 
     witdh2
       ? {
-          width: `${pxFull}%`,
-          justifyContent: "space-evenly",
-          cursor: "default",
-          backgroundRepeat: "no-repeat",
-          backgroundSize: "100% auto",
-          transition: "0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955)",
-          alignItems: "start",
-          
+        width: `${pxFull}%`,
+        cursor: "default",
+        display: "flex",
+        justifyContent: "space-evenly",
+        backgroundRepeat: "no-repeat",
+        
+        transition: "0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955)",
+        alignItems: "start",
+         
         }
       : {
           width: `${pxMiddle}%`,
           justifyContent: "space-evenly",
           filter: "grayscale(96%)",
+       
         },
 
     witdh3
       ? {
-          width: `${pxFull}%`,
-          justifyContent: "space-evenly",
-          cursor: "default",
-          backgroundRepeat: "no-repeat",
-          backgroundSize: "100% auto",
-          transition: "0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955)",
-          alignItems: "start",
+        width: `${pxFull}%`,
+        cursor: "default",
+        display: "flex",
+        justifyContent: "space-evenly",
+        backgroundRepeat: "no-repeat",
+        
+        transition: "0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955)",
+        alignItems: "start",
         }
       : {
           width: `${pxMiddle}%`,
           justifyContent: "space-evenly",
           filter: "grayscale(96%)",
+  
         },
 
     witdh4
       ? {
-          width: `${pxFull}%`,
-          justifyContent: "space-evenly",
-          cursor: "default",
-          backgroundRepeat: "no-repeat",
-          backgroundSize: "100% auto",
-          transition: "0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955)",
-          alignItems: "start",
+        width: `${pxFull}%`,
+        cursor: "default",
+        display: "flex",
+        justifyContent: "space-evenly",
+        backgroundRepeat: "no-repeat",
+        transition: "0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955)",
+        alignItems: "start",
         }
       : {
           width: `${pxMiddle}%`,

@@ -72,11 +72,11 @@ export const StyledBtnP = styled.p`
 
 export const StyledCarrosel = styled.div<props>`
 @media ${device.mobile}{
-  height: 150px;
- 
+  height: 250px;
   background-image: url("${(props) => props.imageUrl}");
   background-repeat: no-repeat;
-
+  background-position: center;
+  background-size: cover;
   transition: 0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955);
   cursor: pointer;
   align-items: start;
