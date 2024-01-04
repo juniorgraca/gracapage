@@ -34,8 +34,6 @@ export const NavBarContent = styled.div`
   height: 70px;
   display: flex;
   z-index: 5;
-
-
 }
 
 @media ${device.desktopSmall}{
@@ -51,7 +49,6 @@ export const NavBarContent = styled.div`
 export const NavBarArea = styled.div`
 @media ${device.mobile}{
   display: flex;
-
   align-items: center;
   justify-content: space-around;
   margin: 0 auto;
@@ -61,7 +58,6 @@ export const NavBarArea = styled.div`
 
 @media ${device.mobileSmall}{
   display: flex;
-
   align-items: center;
   justify-content: space-around;
   margin: 0 auto;
@@ -69,7 +65,6 @@ export const NavBarArea = styled.div`
 
 @media ${device.tablets}{
   display: flex;
-
   align-items: center;
   justify-content: space-around;
   margin: 0 auto;
@@ -96,9 +91,101 @@ export const NavBarArea = styled.div`
   align-items: center;
   justify-content: space-around;
   margin: 0 auto;
+}
+ a{
+  @media ${device.mobile}{
+  color: #fff;
+  display: inline;
+  font-family: MonaSans;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  padding-left:25px;
+  cursor: pointer;
+  line-height: normal;
+  text-decoration:none;
+  &:hover {
+    color: #f9c202;
+  }
+}
+
+
+
+@media ${device.mobileSmall}{
+  color: #fff;
+  display: inline;
+  font-family: MonaSans;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  padding-left:25px;
+  cursor: pointer;
+  line-height: normal;
+  &:hover {
+    color: #f9c202;
+  }
+}
+
+@media ${device.tablets}{
+  color: #fff;
+  display: inline;
+  font-family: MonaSans;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  padding-right: 15px;
+  cursor: pointer;
+  line-height: normal;
+  &:hover {
+    color: #f9c202;
+  }
+}
+@media ${device.tabletsSmall}{
+  color: #fff;
+  display: inline;
+  font-family: MonaSans;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  padding-right: 15px;
+  cursor: pointer;
+  line-height: normal;
+  &:hover {
+    color: #f9c202;
+  }
+  
+}
+@media ${device.desktop}{
+  color: #fff;
+  display: inline;
+  font-family: MonaSans;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  padding-right: 15px;
+  cursor: pointer;
+  line-height: normal;
+  &:hover {
+    color: #f9c202;
+  }
 
 }
- 
+
+@media ${device.desktopSmall}{
+  color: #fff;
+  display: inline;
+  font-family: MonaSans;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  padding-right: 15px;
+  cursor: pointer;
+  line-height: normal;
+  &:hover {
+    color: #f9c202;
+  }
+}
+ }
 `;
 
 export const LogoImg = styled.img`

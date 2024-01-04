@@ -6,12 +6,9 @@ interface props {
 }
 
 export const StyledNavContent = styled.nav`
-
  @media ${device.mobile}{
   padding-top:30px;
 }
-
-
 
 @media ${device.mobileSmall}{
   padding-top:30px;
@@ -24,14 +21,12 @@ export const StyledNavContent = styled.nav`
   padding-top:30px;
 }
 @media ${device.desktop}{
- 
   padding-top:70px;
 }
 
 @media ${device.desktopSmall}{
   padding-top:70px;
 }
-
 `;
 
 

@@ -6,6 +6,7 @@ import {
   LogoArea,
   NavBarArea,
 } from "../../components/NavBar.style";
+import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 
 
@@ -46,9 +47,9 @@ function NavBar() {
     <NavBarContent style={stylesArray}>
       <NavBarArea>
         <MenuText>
-          <MenuLi>Home</MenuLi>
-          <MenuLi>Contact</MenuLi>
-          <MenuLi>Portfolio</MenuLi>
+          <MenuLi><Link to ="/">Home</Link></MenuLi>
+          <MenuLi><Link to ="/contact">Contact</Link></MenuLi>
+          <MenuLi><Link to ="/portfolio">Portfolio</Link></MenuLi>
         </MenuText>
 
         <LogoArea>
