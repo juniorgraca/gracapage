@@ -1,13 +1,26 @@
+import logoImgCont from "/logoContact.png";
+import {  StyledNavContact, ContentContact,ImgLogo, TextArea, Text, TextAreaInput} from "../../components/ContactPage.style"
+import {
+} from "../../components/InititalBanners.style";
 
-import {  StyledNavContent} from "../../components/Contact.style"
-import InititalBanners from "../InitialBanners/InititalBanners"
 function Contact() {
   return (
-    <div>
+   <>
 
-        <StyledNavContent> ASHUDas </StyledNavContent>
-        <InititalBanners></InititalBanners>
-    </div>
+        <StyledNavContact>
+          <ContentContact>
+          <ImgLogo src={logoImgCont}/>
+          <TextArea>
+          <Text>
+            Mensagem:
+          </Text>
+          <TextAreaInput></TextAreaInput>
+        </TextArea>
+        </ContentContact>
+       
+        </StyledNavContact>
+        </>
+   
   )
 }
 
