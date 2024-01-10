@@ -74,3 +74,6 @@ font-weight: 400;
 line-height: normal;
 padding:10px;
 `
+
+export const LinkBtn = styled.a`
+`
