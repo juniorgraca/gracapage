@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState,} from "react";
 
 import { banners } from "../../types/banners";
 
@@ -27,6 +27,8 @@ function InititalBanners() {
     setWidth3(id === 3 ? true : false);
     setWidth4(id === 4 ? true : false);
   };
+
+
 
   const pxFull = 100;
   const pxMiddle = 10;

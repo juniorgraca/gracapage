@@ -17,16 +17,13 @@ function Contact() {
   const inputRef = useRef<HTMLInputElement>(null);
   
   const generateWhatsAppLink = (updatedValue: string) => {
-    return `https://web.whatsapp.com/send/?phone=5567981234439&text=${encodeURIComponent(updatedValue)}&type=phone_number&app_absent=0`;
+    return `https://wa.me//5567981234439?text=${encodeURIComponent(updatedValue)}`;
   };
 
   const onButtonClick = () => {
     if (inputRef.current) {
       const updatedValue = inputRef.current.value;
       const whatsappLink = generateWhatsAppLink(updatedValue);
-      console.log(whatsappLink); // Log the generated link
-      
-      // Open WhatsApp in a new window/tab
       window.open(whatsappLink, "_blank");
     }
   };

@@ -18,7 +18,7 @@ const projects: propsProjects[] = [
     desc:"UI - Site The Mandalorian",
     icon: ["project-icons/FIGMA-ICON.svg", "project-icons/PHOTSHOP-ICON.svg"],
     class: "container1",
-    link:"test1"
+    link:"/portfolio"
   },
   {
     id: 1,
@@ -27,7 +27,7 @@ const projects: propsProjects[] = [
     desc:"Projeto de Ui/Dev",
     icon: ["project-icons/TYPESCRIPT-ICON.svg", "project-icons/REACT-ICON.svg"],
     class: "container2",
-    link:"test2"
+    link:"/portfolio"
   },
   {
     id: 2,
@@ -40,14 +40,14 @@ const projects: propsProjects[] = [
       
     ],
     class: "container3",
-    link:"test3"
+    link:"/portfolio"
   },
   {
     id: 3,
     name: "UI CARLOS GRAÇA PORTFOLIO",
     img: "project-icons/content--img/port.png",
     desc:"Projeto - UI - DEV Meu Portfolio ",
-    link:"test4",
+    link:"/portfolio",
     icon: [
       "project-icons/REACT-ICON.svg",
       "project-icons/TYPESCRIPT-ICON.svg",

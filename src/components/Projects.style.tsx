@@ -40,7 +40,7 @@ export const PnavContent = styled.div`
 @media ${device.desktopSmall}{
   display: flex;
   width: 1440px;
-  margin: 20px 0px 10px 10px;
+
 }
 
 `;

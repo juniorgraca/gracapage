@@ -1,15 +1,15 @@
 import NavBar from "../NavBar/NavBar"
-import Projects from "../Projects/Projects"
-import Footer from "../Footer/Footer"
-import InititalBanners from "../InitialBanners/InititalBanners"
+
+
+import ProjectsOne from "../PageProjects/ProjectsOne"
+
 
 function ProjectsPage() {
   return (
     <div>
          <NavBar></NavBar>
-         <InititalBanners></InititalBanners>
-           <Projects></Projects>
-          <Footer></Footer> 
+    <ProjectsOne></ProjectsOne>
+  
     </div>
   )
 }
